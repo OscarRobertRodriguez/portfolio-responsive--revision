@@ -1,3 +1,78 @@
-//
-   Created by oscar on 1/31/17.
 
+// Created on 1/31/2017
+
+
+
+
+doctype html
+html
+
+    head
+        // basic page needs
+        title responsive portfolio
+        meta(charset="utf-8")
+        // mobile specific metas
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        // css
+        link( rel="stylesheet", href="build/styles/main.css")
+
+
+    body
+
+        // primary page layout
+
+
+
+        header(class="primary-header  container  margin-padding--zero")
+
+          ul(class="primary-header__site noSelect")
+
+            li(class="primary-header__item")
+              h1(class="primary-header__name  margin-padding--zero") Oscar R.  <span class="primary-header__name--shadow">Portfolio</span>
+
+            li(class="primary-header__item  primary-form")
+              input( class="primary-header__search" type="search")
+              button(class="primary-header__search__btn" type="submit") search
+
+
+
+
+
+        nav(class="primary-nav  container  noSelect" role="menu")
+          ul(class="primary-nav__tabs  row")
+
+              li(class="primary-nav__tab")
+                input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1")
+                label(for="tab-1__primary" class="primary-nav__label  col-2") Projects
+
+                div(class="primary-nav__content ")
+                  p hello my name is oscar what are you doing today?
+                  p doding good
+                  p how about you
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore officiis totam beatae iusto doloribus ratione sed adipisci ducimus quia dolorem numquam. Iste animi voluptatum odio nemo officiis sunt necessitatibus.
+
+              li(class="primary-nav__tab")
+                input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1")
+                label(for="tab-2__primary" class="primary-nav__label  col-2") About
+
+                div(class="primary-nav__content")
+
+              li(class="primary-nav__tab")
+                input(type="radio" class="primary-nav__radio" id="tab-3__primary" name="tab-group-1")
+                label(for="tab-3__primary" class="primary-nav__label  col-2") Skills
+
+                div(class="primary-nav__content")
+
+              li(class="primary-nav__tab")
+                input(type="radio" class="primary-nav__radio" id="tab-4__primary" name="tab-group-1")
+                label(for="tab-4__primary" class="primary-nav__label col-2") Contact
+
+                div(class="primary-nav__content") red
+
+
+
+
+//
+//div(class="primary-header__name__container row")
+//
+//  div(class="primary-header__form row")

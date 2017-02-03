@@ -1,0 +1,351 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * Navigation
+ * #NAVIGATION...............site navigation.
+ *
+ * NORMALIZE
+ * _normalize.scss........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * GRID
+ * _grid.scss ...12 column grid for layout
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+
+@import "normalize";
+@import "grid";
+
+
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
+body {
+  font-size: 100%;
+}
+
+
+.box {
+  padding: 5px;
+  border: 1px solid red;
+  margin:0;
+}
+
+
+.margin-padding--zero {
+  margin:0;
+  padding:0;
+}
+
+
+.noSelect {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+
+/*------------------------------------*\
+  #PRIMARY-HEADER
+\*------------------------------------*/
+
+
+
+.primary-header {
+  justify-content: space-between;
+  border: none;
+  overflow: hidden;
+
+
+
+    &__site {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      flex-wrap: wrap;
+
+      @include forSmallScreens(1080) {
+        padding:0;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+
+      &__item {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 20px;
+        max-height: 4em;
+        box-sizing: border-box;
+        height: auto;
+        overflow: visible;
+
+
+        @include forSmallScreens(1024) {
+          padding: 10px;
+        }
+
+      }
+
+      &__name {
+        font-family: leagueGothicRegular;
+        font-size: 3em;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      }
+
+        &__name--shadow {
+          text-transform: uppercase;
+          font-size: .6em;
+          text-shadow: 1px 2px 3px grey;
+          letter-spacing: 10px;
+          border-left: 1px solid black;
+          padding-left: 20px;
+        }
+
+
+
+    @at-root .primary-form {
+      width: 500px;
+      margin: 0 20px;
+
+      @include forSmallScreens(1080) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      @include forSmallScreens(460) {
+        width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+
+
+
+        &__search {
+          flex: 2 0 200px;
+          height: 40px;
+          font-family: leagueGothicRegular;
+          border: 1px solid black;
+          background: #d2d6d3;
+          padding-left: 5px;
+          font-size: 2em;
+          box-sizing: border-box;
+          outline: none;
+
+          @include forSmallScreens(460) {
+            width: 270px;
+          }
+        }
+
+
+        &__search__btn {
+          flex: 1 0 100px;
+          box-sizing: border-box;
+          overflow: auto;
+
+          @include forSmallScreens(1024) {
+            height: 45px;
+            margin: 0;
+          }
+
+          @include forSmallScreens(600) {
+
+          }
+
+          @include forSmallScreens(460) {
+            padding: 0;
+            margin: 0;
+          }
+
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
+
+
+/* styling for tabs navigation */
+
+.primary-nav {
+  padding: 0;
+  border: none;
+  overflow: visible;
+
+  @include forSmallScreens(1024) {
+    height: auto;
+  }
+
+// .primary-nav__tabs for the ul nav container
+  &__tabs {
+    position: relative;
+    min-height: 500px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    @include forSmallScreens(1024) {
+      position: absolute;
+      padding: 0;
+      width: 100%;
+      display: block;
+
+    }
+  }
+
+
+// targets the li elements of nav
+    &__tab {
+      flex: 1 0 200px;
+
+      @include forSmallScreens(1024) {
+
+        flex: 1 0 600px;
+
+      }
+
+      @include forSmallScreens(600) {
+        flex: 1 0 300px;
+      }
+
+    }
+
+      &__radio {
+        display: none;
+      }
+
+      &__label {
+        font-family: leagueGothicRegular;
+        font-weight: 900;
+        cursor: pointer;
+        letter-spacing: 3px;
+        position: relative;
+        width: 100%;
+        font-size:1.9em;
+        padding: 1em;
+        text-transform: uppercase;
+
+        background: #fff;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px #ccc;
+        left: 1px;
+
+
+        &:hover {
+          letter-spacing: 0;
+          border-bottom: 8px solid black;
+        }
+
+
+
+        @include forSmallScreens(1024) {
+
+        }
+
+
+      }
+
+
+      &__content {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 100px;
+        background: #fff;
+        padding: 0;
+        border: 1px solid #ccc;
+        color: red;
+
+        @include forSmallScreens(1024) {
+          overflow: hidden;
+          position: relative;
+          max-height: 0em;
+          border: none;
+          width: 100%;
+          top: 0;
+          transition: max-height 300ms ease-in-out;
+        }
+
+        @include forSmallScreens(600) {
+
+        }
+
+        @include forSmallScreens(460) {
+
+        }
+
+
+      }
+
+// these styles give the ability for tabs to change
+      &__radio:checked ~ label {
+        outline: none;
+        background: white;
+        border-bottom: 8px solid black;
+        z-index:2;
+        letter-spacing: 0;
+
+        @include forSmallScreens(1024) {
+          z-index: 0;
+          border-bottom: 1px solid black;
+        }
+
+      }
+
+      &__radio:checked ~ .primary-nav__content {
+        outline: none;
+        z-index:1;
+        padding: 20px;
+
+        @include forSmallScreens(1024) {
+          max-height: 40em;
+          z-index: 0;
+        }
+      }
+
+
+}
