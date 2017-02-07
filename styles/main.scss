@@ -39,8 +39,14 @@
   #GLOBAL
 \*------------------------------------*/
 
+html {
+min-height: 100%;
+}
+
 body {
   font-size: 100%;
+  max-height: 100%;
+
 }
 
 
@@ -61,6 +67,20 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+
+.hide-grid {
+  border: none;
+  background-color: #fff;
+}
+
+
+.modern__input {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  width: 250px;
+}
 
 
 /*------------------------------------*\
@@ -125,7 +145,7 @@ body {
 
 
 
-    @at-root .primary-form {
+    @at-root .primary-search {
       width: 500px;
       margin: 0 20px;
 
@@ -211,7 +231,8 @@ body {
 .primary-nav {
   padding: 0;
   border: none;
-  overflow: visible;
+  height: 100%;
+  width: 100%;
 
   @include forSmallScreens(1024) {
     height: auto;
@@ -220,14 +241,14 @@ body {
 // .primary-nav__tabs for the ul nav container
   &__tabs {
     position: relative;
-    min-height: 500px;
+    min-height: 700px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
 
     @include forSmallScreens(1024) {
-      position: absolute;
+
       padding: 0;
       width: 100%;
       display: block;
@@ -266,6 +287,7 @@ body {
         font-size:1.9em;
         padding: 1em;
         text-transform: uppercase;
+        text-align: center;
 
         background: #fff;
         border: 1px solid lightgrey;
@@ -297,8 +319,10 @@ body {
         top: 100px;
         background: #fff;
         padding: 0;
-        border: 1px solid #ccc;
-        color: red;
+        height: 100vh;
+
+
+
 
         @include forSmallScreens(1024) {
           overflow: hidden;
@@ -307,7 +331,8 @@ body {
           border: none;
           width: 100%;
           top: 0;
-          transition: max-height 300ms ease-in-out;
+          transform: translate3d(0,0,0);
+          transition: max-height .0125s ease-in;
         }
 
         @include forSmallScreens(600) {
@@ -337,15 +362,231 @@ body {
       }
 
       &__radio:checked ~ .primary-nav__content {
-        outline: none;
+        outline: 1px solid red;
         z-index:1;
         padding: 20px;
 
+
+
+
         @include forSmallScreens(1024) {
-          max-height: 40em;
+          max-height: 100em;
+          //transition: max-height .3s ease-in-out;
           z-index: 0;
         }
       }
 
 
 }
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #PROJECTS
+\*------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #CONTACT__FORM
+\*------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+.primary-form {
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 80px;
+  padding-bottom: 50px;
+
+  @include forSmallScreens(760) {
+    padding: 20px 0;
+  }
+
+
+  & h2 {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    font-size: 2em;
+    text-transform: capitalize;
+
+    @include forSmallScreens(930) {
+      text-align: center;
+    }
+  }
+
+  &__inputs__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+
+  }
+
+
+    &__item  {
+      position: relative;
+      display: flex;
+      flex: 0 0 300px;
+      padding: 20px;
+      margin: 10px;
+      margin-bottom: 0px;
+
+
+    }
+
+    &__name, &__email {
+      padding-top: 40px;
+      width: 400px;
+
+      @include forSmallScreens(600) {
+        width: 300px;
+      }
+
+    }
+
+      &__input--animate {
+
+        &:focus {
+          border-bottom: 2px solid black;
+        }
+
+        &:focus ~ label {
+          top: 20px;
+          color: deeppink;
+
+        }
+
+        &:valid ~ label {
+          top: 1px;
+        }
+
+      }
+
+
+
+        &__label--animate {
+          position: absolute;
+          transition: top .1s ease, left .1s ease;
+          top: 50px;
+          left: 20px;
+          font-variant: small-caps;
+          font-size: 1.2em;
+          font-weight: bold;
+          letter-spacing: 1px;
+
+
+        }
+
+
+  &__textarea__container {
+     width: 100%;
+     outline: none;
+     padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  &__comment {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    min-height: 200px;
+    max-height: 200px;
+    resize: none;
+    overflow: auto;
+  }
+
+
+  &__button {
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    height: 44px;
+    box-shadow: 0px 2px 10px lightgrey;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+
+
+footer {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 100;
+
+  @include forSmallScreens(460) {
+    position: relative;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

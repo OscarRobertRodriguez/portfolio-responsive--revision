@@ -30,7 +30,7 @@ html
             li(class="primary-header__item")
               h1(class="primary-header__name  margin-padding--zero") Oscar R.  <span class="primary-header__name--shadow">Portfolio</span>
 
-            li(class="primary-header__item  primary-form")
+            li(class="primary-header__item  primary-search")
               input( class="primary-header__search" type="search")
               button(class="primary-header__search__btn" type="submit") search
 
@@ -38,36 +38,93 @@ html
 
 
 
-        nav(class="primary-nav  container  noSelect" role="menu")
+        nav(class="primary-nav    noSelect" role="menu")
           ul(class="primary-nav__tabs  row")
 
+
+
+              // first tab: Projects
               li(class="primary-nav__tab")
-                input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1")
+                input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1" checked)
                 label(for="tab-1__primary" class="primary-nav__label  col-2") Projects
 
-                div(class="primary-nav__content ")
-                  p hello my name is oscar what are you doing today?
-                  p doding good
-                  p how about you
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore officiis totam beatae iusto doloribus ratione sed adipisci ducimus quia dolorem numquam. Iste animi voluptatum odio nemo officiis sunt necessitatibus.
+                div(class="primary-nav__content " )
+                  div(class="container")
+                    p Some pretty cool projects that I have built take a look at my Shopping Cart that's one I learned a lot from.
 
+                  div(class="container")
+                    div(class="project__container")
+                      div(class="project__tabs")
+
+                        div(class="project__tab")
+
+                          input(type="radio" id="project__tab-01" name="tab-group-2")
+                          label(for="project__tab-01")
+
+
+
+
+
+
+
+
+
+
+
+
+              // second tab : About
               li(class="primary-nav__tab")
                 input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1")
                 label(for="tab-2__primary" class="primary-nav__label  col-2") About
 
                 div(class="primary-nav__content")
 
+
+
+
+
+
+              //  third tab: Skills
               li(class="primary-nav__tab")
                 input(type="radio" class="primary-nav__radio" id="tab-3__primary" name="tab-group-1")
                 label(for="tab-3__primary" class="primary-nav__label  col-2") Skills
 
                 div(class="primary-nav__content")
 
+
+
+
+
+
+
+              // last and fourth tab : Contact
               li(class="primary-nav__tab")
                 input(type="radio" class="primary-nav__radio" id="tab-4__primary" name="tab-group-1")
                 label(for="tab-4__primary" class="primary-nav__label col-2") Contact
 
-                div(class="primary-nav__content") red
+                div(class="primary-nav__content ")
+
+
+
+                  form(class="primary-form   ")
+                    h2(class="primary-form__title") Let's build something
+
+                    ul(class="primary-form__inputs__container  col-12  hide-grid")
+
+                      li(class="primary-form__item")
+                        input(class="primary-form__name  primary-form__input--animate  modern__input" type="text" required)
+                        label(class="primary-form__label--animate") Name
+
+                      li(class="primary-form__item")
+                        input(class="primary-form__email  primary-form__input--animate  modern__input" type="text" required)
+                        label(class="primary-form__label--animate") Email
+
+                    div(class="primary-form__textarea__container")
+                      textarea(class="primary-form__comment " placeholder="comment here...")
+
+
+                    button(class="primary-form__button" type="submit") send
+
 
 
 
@@ -76,3 +133,6 @@ html
 //div(class="primary-header__name__container row")
 //
 //  div(class="primary-header__form row")
+
+
+
