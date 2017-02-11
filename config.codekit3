@@ -105,6 +105,22 @@
 		"oAP": "\/build\/fonts\/LeagueGothic-Regular.otf",
 		"oF": 0
 		},
+	"\/images\/btns-gif.gif": {
+		"ft": 4194304,
+		"iS": 898953,
+		"oA": 0,
+		"oAP": "\/build\/images\/btns-gif.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/btns.png": {
+		"ft": 32768,
+		"iS": 265926,
+		"oA": 0,
+		"oAP": "\/build\/images\/btns.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -137,6 +153,32 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/styles\/_carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_carousel.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_contact-form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_contact-form.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/styles\/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -146,6 +188,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/styles\/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_global.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_global.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -172,6 +240,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/styles\/_normalize.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_primary-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_primary-header.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_projects-tab.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_projects-tab.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_site-navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_site-navigation.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

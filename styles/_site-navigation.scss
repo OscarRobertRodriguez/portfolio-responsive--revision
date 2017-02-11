@@ -1,0 +1,169 @@
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
+
+
+/* styling for tabs navigation */
+
+.primary-nav {
+  padding: 0;
+  border: none;
+  height: 100%;
+  width: 100%;
+
+  @include forSmallScreens(1024) {
+    height: auto;
+  }
+
+  // .primary-nav__tabs for the ul nav container
+  &__tabs {
+    position: relative;
+    min-height: 700px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    @include forSmallScreens(1024) {
+
+      width: 100%;
+      display: block;
+
+    }
+  }
+
+
+  // targets the li elements of nav
+  &__tab {
+    flex: 1 0 200px;
+
+    @include forSmallScreens(1024) {
+
+      flex: 1 0 600px;
+
+    }
+
+    @include forSmallScreens(600) {
+      flex: 1 0 300px;
+    }
+
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__label {
+    font-family: leagueGothicRegular;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 3px;
+    position: relative;
+    width: 100%;
+    font-size:1.9em;
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #ccc;
+    left: 1px;
+
+
+    &:hover {
+      letter-spacing: 0;
+      border-bottom: 8px solid black;
+    }
+
+
+
+    @include forSmallScreens(1024) {
+
+    }
+
+
+  }
+
+
+  &__content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 100px;
+    background: #fff;
+    padding: 0;
+    height: 1000px;
+
+
+
+
+    @include forSmallScreens(1024) {
+      overflow: hidden;
+      position: relative;
+      max-height: 0em;
+      border: none;
+      width: 100%;
+      top: 0;
+      transform: translate3d(0,0,0);
+      transition: max-height .0125s ease-in;
+    }
+
+    @include forSmallScreens(600) {
+
+    }
+
+    @include forSmallScreens(460) {
+
+    }
+
+
+  }
+
+  // these styles give the ability for tabs to change
+  &__radio:checked ~ label {
+    outline: none;
+    background: white;
+    border-bottom: 8px solid black;
+    z-index:2;
+    letter-spacing: 0;
+
+    @include forSmallScreens(1024) {
+      z-index: 0;
+      border-bottom: 1px solid black;
+    }
+
+  }
+
+  &__radio:checked ~ .primary-nav__content {
+    outline: 1px solid red;
+    z-index:1;
+    padding: 20px;
+
+
+    @include forSmallScreens(1024) {
+      max-height: 100em;
+      //transition: max-height .3s ease-in-out;
+
+      min-height: 88em;
+      padding: 0;
+    }
+
+  }
+
+
+}
+
+
+.primary-nav__radio:checked ~ .contact-content,
+.primary-nav__radio:checked ~ .about-content {
+
+  @include forSmallScreens(1024) {
+    max-height: 50em;
+    min-height: 30em;
+  }
+}

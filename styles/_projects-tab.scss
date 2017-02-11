@@ -1,0 +1,133 @@
+/*------------------------------------*\
+  #PROJECTS-TAB
+\*------------------------------------*/
+
+
+.project__container {
+
+
+ @include forSmallScreens(870) {
+   height: 100%;
+
+ }
+
+}
+
+
+
+.project-component {
+  position: relative;
+
+  height: 700px;
+  width: 100%;
+  margin: auto;
+
+  @include forSmallScreens(870) {
+    display: flex;
+    flex-direction: column;
+    height: 1130px;
+  }
+
+  @include forSmallScreens(460) {
+    width: 100%;
+  }
+}
+
+
+
+.project-component--nav {
+
+  height: 100%;
+
+  @include forSmallScreens(870) {
+    display: flex;
+    flex-direction: column;
+    height: 69%;
+    width: 100%;
+    padding: 0;
+  }
+
+  @include forSmallScreens(440) {
+    height: 50%;
+  }
+
+}
+
+.project-component--nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include forSmallScreens(870) {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 76%;
+  }
+
+}
+
+.project-component--nav ul li {
+
+  margin-top: 2em;
+
+  @include forSmallScreens(870) {
+    margin-top: 0;
+  }
+}
+
+.project-component--nav label {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 3.6em;
+  cursor: pointer;
+
+
+  &:hover {
+    border-right: 10px solid black;
+  }
+}
+
+
+.project-component--showcase {
+  position: relative;
+
+  width: 75%;
+  height: 100%;
+
+  @include forSmallScreens(870) {
+    width: 100%;
+    height: 145%;
+  }
+
+  @include forSmallScreens(440) {
+    width: 100%;
+    height: 110%;
+  }
+
+}
+
+
+
+
+//  sass for loop to target all labels using the nth-child selector when its radio button is clicked for styling purposes
+
+
+@for $i from 1 through 6 {
+  .project-component input:nth-child(#{$i}):checked ~ .project-component--nav > ul > li:nth-child(#{$i}) > label {
+    border-right: 10px solid black;
+
+  }
+
+}
+
+

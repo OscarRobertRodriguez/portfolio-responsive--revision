@@ -48,43 +48,232 @@ html
                 input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1" checked)
                 label(for="tab-1__primary" class="primary-nav__label  col-2") Projects
 
-                div(class="primary-nav__content " )
+                div(class="primary-nav__content" )
+
                   div(class="container")
                     p Some pretty cool projects that I have built take a look at my Shopping Cart that's one I learned a lot from.
 
-                  div(class="container")
-                    div(class="project__container")
-                      div(class="project__tabs")
+                  div(class="project__container  container" )
 
-                        div(class="project__tab")
-
-                          input(type="radio" id="project__tab-01" name="tab-group-2")
-                          label(for="project__tab-01")
-
-
-
+                    div(class="project-component")
+                      input(type="radio" id="project__tab-01" class="radio--none" name="tab-group-2")
+                      input(type="radio" id="project__tab-02"  class="radio--none" name="tab-group-2")
+                      input(type="radio" id="project__tab-03"  class="radio--none" name="tab-group-2")
+                      input(type="radio" id="project__tab-04"  class="radio--none" name="tab-group-2")
+                      input(type="radio" id="project__tab-05" class="radio--none" name="tab-group-2")
+                      input(type="radio" id="project__tab-06"  class="radio--none" name="tab-group-2")
 
 
 
 
+                      // Button Web Component: first tab
+                      div(class="project-component--nav  col-3" )
+
+                        ul
+                          li
+                            label(for="project__tab-01"  class="project__label") Button Web Component
+                          li
+                            label(for="project__tab-02"  class="project__label")  Sidebar Component
+                          li
+                            label(for="project__tab-03"  class="project__label")  Forms and inputs
+                          li
+                            label(for="project__tab-04"  class="project__label")  calculator
+                          li
+                            label(for="project__tab-05"  class="project__label")  Product Listing page
+                          li
+                            label(for="project__tab-06"  class="project__label")  css accordion
 
 
 
 
 
-              // second tab : About
+                                                                                //- Begin carousel section
+                      div(class="project-component--showcase container")
+
+
+
+
+
+                        div(class="project-content__carousel col-9")
+
+                          ul(class="project-carousel ")
+                            input(type="radio" id="1" name="activator" checked="checked"  class="project-carousel--activator")
+                            input(type="radio" id="2" name="activator"   class="project-carousel--activator")
+                            input(type="radio" id="3" name="activator"   class="project-carousel--activator")
+
+                            div(class="project-carousel__controls")
+                              label(for="2" class="project-carousel__control  control--backward")
+                              label(for="3" class="project-carousel__control  control--forward")
+
+                            div(class="project-carousel__controls")
+                              label(for="3" class="project-carousel__control  control--backward")
+                              label(for="1" class="project-carousel__control  control--forward")
+
+
+                            div(class="project-carousel__controls")
+                              label(for="1" class="project-carousel__control  control--backward")
+                              label(for="2" class="project-carousel__control  control--forward")
+
+
+                            div(class="project-carousel--record__player")
+
+
+                              //  track 1
+                              div(class="project-carousel__track" style="border: 1px solid black;")
+                                li(class="project-carousel__slide")
+                                  div(class="slide  container")
+                                    div(class="col-8 col-centered  slide__info  slide__info--large  centered")
+                                      p These buttons were made using html and css only
+
+
+
+                                li(class="project-carousel__slide")
+                                  div(class="slide  ")
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/btns.png")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small  centered")
+                                      p These buttons were made using html and css only
+
+                                li(class="project-carousel__slide")
+                                  div(class="slide  container")
+
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/btns-gif.gif")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small")
+
+                                      ul(class="slide-links")
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="0#") view source
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="#") view demo
+
+
+
+                              // track 2
+                              div(class="project-carousel__track")
+                                li(class="project-carousel__slide")
+                                  div(style="width: 200px; border: 1px solid black; height: 100px; background: blue; margin: auto;")
+
+
+                                li(class="project-carousel__slide")
+                                  h1 5
+
+                                li(class="project-carousel__slide")
+                                  h1 6
+
+
+
+                              // track 3
+                              div(class="project-carousel__track")
+                                li(class="project-carousel__slide")
+                                  h1 7
+
+
+                                li(class="project-carousel__slide")
+                                  h1 8
+
+                                li(class="project-carousel__slide")
+                                  h1 9
+
+
+
+
+                              // track 4
+                              div(class="project-carousel__track")
+                                li(class="project-carousel__slide")
+                                  h1 10
+
+
+                                li(class="project-carousel__slide")
+                                  h1 11
+
+                                li(class="project-carousel__slide")
+                                  h1 12
+
+
+
+
+                              // track 5
+                              div(class="project-carousel__track")
+                                li(class="project-carousel__slide")
+                                  h1 13
+
+
+                                li(class="project-carousel__slide")
+                                  h1 14
+
+                                li(class="project-carousel__slide")
+                                  h1 15
+
+
+
+                              // track 6
+                              div(class="project-carousel__track")
+                                li(class="project-carousel__slide")
+                                  h1 16
+
+
+                                li(class="project-carousel__slide")
+                                  h1 17
+
+                                li(class="project-carousel__slide")
+                                  h1 18
+
+
+
+
+
+                            div(class="project-carousel__indicators")
+                              label(for="1" class="project-carousel__indicator")
+                              label(for="2" class="project-carousel__indicator")
+                              label(for="3" class="project-carousel__indicator")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              // End Project tab component
+
+
+
+
+
+
+
+
+
+
+
+
+
+              // second tab  About
               li(class="primary-nav__tab")
                 input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1")
                 label(for="tab-2__primary" class="primary-nav__label  col-2") About
 
-                div(class="primary-nav__content")
+                div(class="primary-nav__content  about-content")
 
 
 
 
 
 
-              //  third tab: Skills
+
+              // third tab Skills
               li(class="primary-nav__tab")
                 input(type="radio" class="primary-nav__radio" id="tab-3__primary" name="tab-group-1")
                 label(for="tab-3__primary" class="primary-nav__label  col-2") Skills
@@ -102,7 +291,7 @@ html
                 input(type="radio" class="primary-nav__radio" id="tab-4__primary" name="tab-group-1")
                 label(for="tab-4__primary" class="primary-nav__label col-2") Contact
 
-                div(class="primary-nav__content ")
+                div(class="primary-nav__content  contact-content")
 
 
 
