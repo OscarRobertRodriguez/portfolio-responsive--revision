@@ -1,0 +1,79 @@
+
+
+
+/*------------------------------------*\
+  #ABOUT
+\*------------------------------------*/
+
+
+
+.about {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1000px;
+  max-height: 900px;
+
+  flex-wrap: wrap;
+
+  @include  forSmallScreens( 960) {
+
+    justify-content:  center;
+  }
+
+}
+
+
+
+
+
+
+
+
+  .about__img {
+
+    max-width: 100%;
+    height: 600px;
+
+
+    @include forSmallScreens(460) {
+      margin: 0;
+      height: 400px;
+    }
+
+  }
+
+
+  .about__img--rounded {
+    border-radius: 5px;
+  }
+
+
+
+
+  .about__info {
+    font-family: "leagueGothicRegular", sans-serif;
+    font-size: 2.3em;
+    padding: 10px;
+    flex: 1 0 300px;
+
+
+    @include forSmallScreens(480) {
+      font-size: 2.3em;
+      text-align: center;
+      padding: 0;
+    }
+
+  }
+
+    .about__link {
+      white-space: nowrap;
+      color: blue;
+      letter-spacing: 1px;
+      transition: letter-spacing .2s ease-in;
+
+      &:hover {
+       text-decoration: underline;
+       letter-spacing: 2px;
+      }
+
+    }

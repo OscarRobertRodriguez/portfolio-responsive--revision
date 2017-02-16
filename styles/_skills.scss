@@ -1,0 +1,417 @@
+
+
+
+.graphs {
+  width: 100%;
+  margin: auto;
+  max-width: 1500px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  z-index: 0;
+
+  @include forSmallScreens(400) {
+
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+/* completion bar styling the long bar that sits above graphs*/
+
+
+.graphs__completion-bar {
+ display: flex;
+ flex: 1;
+ flex-flow: row nowrap;
+ height: 45px;
+
+
+}
+
+
+.graphs__completion-bar__graph-1, .graphs__completion-bar__graph-2 {
+  display: flex;
+  height: 45px;
+  align-items: center;
+}
+
+  .graphs__completion-bar__graph-1 {
+    background: #FD5A59;
+    flex: 2 0 0;
+  }
+
+  .graphs__completion-bar__graph-2 {
+    background: #4870EE;
+    justify-content: flex-end;
+    flex: 1 0 0;
+  }
+
+
+    .graphs__completion-bar__graph-1 > span,
+    .graphs__completion-bar__graph-2 > span {
+      padding: 10px;
+      color: white;
+    }
+
+
+
+
+
+/* graphs container */
+
+
+.graphs__container {
+
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+    /* Begin styling/layout for each graph not the graph container*/
+
+  .graphs__item {
+
+
+    flex: 1 0 600px;
+    max-width: 600px;
+    min-width: 600px;
+
+    @include forSmallScreens(1277) {
+      max-width: 100%;
+    }
+    @include forSmallScreens(660) {
+
+      min-width: 0;
+    }
+  }
+
+  .graphs__graph-2 {
+    margin-left: auto;
+  }
+
+  .graphs__graph-3 {
+    margin: auto;
+  }
+
+    .graph__title-container {
+      flex: 1;
+
+    }
+
+
+    .graph__title-1, .graph__title-2, .graph__title-3 {
+      letter-spacing: 1px;
+    }
+
+      .graph__title-1 {
+        color:  $graph-1__completion-bar;
+      }
+
+      .graph__title-2 {
+        color: $graph-2__completion-bar;
+      }
+
+
+
+
+.graph__parts-container {
+  display : flex;
+  flex-direction:  row;
+  border-bottom: 2px solid $graph__border-bottom;
+
+}
+
+
+    // styling for bar part of graph
+    .graph-bars {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      flex: 4 0 0;
+      order: 2;
+
+
+    }
+
+      .graph-bars__bar {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        box-shadow:  12px 1px 10px rgba(204,204,204,0.75);
+        font-weight: bold;
+
+
+        @include forSmallScreens(460) {
+          box-shadow: 5px 1px 1px rgba(204,204,204,0.75);
+        }
+      }
+
+
+      .graph-bars__bar::before {
+        display: block;
+        position: absolute;
+        margin-bottom: -4em;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: .15em 0;
+        content: attr(data-bar-label);
+        font-size: 1em;
+        transform: rotate(45deg);
+
+        @include forSmallScreens(460) {
+          transform: rotate(75deg);
+
+          right: 5px;
+          white-space: nowrap;
+        }
+
+        @include forSmallScreens(350) {
+          transform: rotate(90deg);
+        }
+      }
+
+      // individual bar graph colors
+
+
+
+      .graph__bar-1 {
+        color: $bar-1;
+        background: currentColor;
+      }
+
+      .graph__bar-2 {
+        color: $bar-2;
+        background: currentColor;
+      }
+
+      .graph__bar-3 {
+        color: $bar-3;
+        background: currentColor;
+      }
+
+      .graph__bar-4 {
+        color: $bar-4;
+        background: currentColor;
+      }
+
+      .graph__bar-5 {
+        color: $bar-5;
+        background: currentColor;
+      }
+
+
+   //  modifier classes named after completion levels
+
+    .graph-bars__bar--expert {
+      height: 100%;
+    }
+
+    .graph-bar__bar--proficient {
+      height: 75%;
+    }
+
+    .graph-bar__bar--competent {
+      height: 50%;
+    }
+
+    .graph-bar__bar--learning {
+      height: 20%;
+    }
+
+
+
+
+
+
+    //  styling for the space of  level of knowledge
+    .graph-completion__levels {
+      display: flex;
+      flex-flow: column;
+      font-size: 1em;
+      font-weight: bold;
+      flex: 1 0 0;
+      order: 1;
+
+      @include forSmallScreens(360) {
+        font-size: .8em;
+      }
+    }
+
+      .graph-completion__item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 80px;
+      }
+
+
+
+
+
+
+
+    //  Begin styling for the categories for the graph will include phantom container to help with alignment
+
+    .graph-skills {
+      display: flex;
+      flex-direction:  row;
+      flex: 1 0 0;
+
+    }
+
+
+
+
+      .graph-skills__categories-container {
+        display: flex;
+        height: 150px;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex: 1 0 0;
+
+
+
+      }
+
+      .graph-skills__categories-container--big {
+        height: 200px;
+      }
+
+
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative; /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none; /* opinion 2 */
+  font-size: .9em; /* opinion 3 */
+  line-height: 2;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent; /* opinion 4 */
+  z-index: 1001; /* absurdity 1 */
+}
+[tooltip]::after {
+  content: attr(tooltip); /* magic! */
+
+  /* most of the rest of this is opinion */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+
+  /*
+    Let the content set the size of the tooltips
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 10px;
+  border-radius: .3px;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000; /* absurdity 2 */
+
+  @include forSmallScreens(460) {
+    white-space: normal;
+  }
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+
+/* FLOW: UP */
+[tooltip]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+
+  @include forSmallScreens(460) {
+    border-top-color: transparent;
+  }
+
+}
+
+[tooltip]::after {
+  bottom: calc(100% + 5px);
+
+
+
+}
+
+[tooltip]::before,
+[tooltip]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+
+
+}
+
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(-80%, 20%);
+  }
+}
+
+
+
+/* FX All The Things */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+
+  @include forSmallScreens(460) {
+    animation: tooltips-horz 300ms ease-out forwards;
+  }
+}
+
+
+
+
+
+
+
+
+

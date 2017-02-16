@@ -57,6 +57,7 @@ a {
   outline: none;
   background: transparent;
   width: 250px;
+  z-index:  1;
 }
 
 
@@ -85,4 +86,33 @@ a {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+  Media Object
+\*------------------------------------*/
+
+
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+.media-figure {
+  margin-right: 1em;
+}
+
+
+
+.media-body {
+  flex: 1;
 }

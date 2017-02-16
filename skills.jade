@@ -1,0 +1,93 @@
+
+
+
+// entire container for the skills section for the content
+section.graphs.container
+
+  // top completion bar for frontend and backend
+  div.graphs__completion-bar
+    div.graphs__completion-bar__graph-1
+      span 60%
+    div.graphs__completion-bar__graph-2
+      span 40%
+
+
+  //    graph container
+  div.graphs__container
+
+
+    //  Graph 1
+    div.graphs__graph-1.graphs__item
+      div.graph__title-container
+        h2.graph__title-1 Frontend Development
+      div.graph__parts-container
+        div.graph-bars
+          div.graph-bars__bar.graph-1__bar-1.graph__bar-1.graph-bar__bar--competent(data-bar-label="Javascript")
+            div.graph-bar__bar.graph-bar__bar--competent(tooltip="I just learned javascript")
+          div.graph-bars__bar.graph-1__bar-2.graph__bar-2.graph-bar__bar--proficient(data-bar-label="HTML/CSS")
+            div.graph-bar__bar.graph-bar__bar--competent(tooltip="I use it everyday but could be better")
+          div.graph-bars__bar.graph-1__bar-3.graph__bar-3.graph-bar__bar--learning(data-bar-label="ReactJS")
+            div.graph-bar__bar.graph-bar__bar--competent(tooltip="Will get to it someday")
+          div.graph-bars__bar.graph-1__bar-4.graph__bar-4.graph-bar__bar--competent(data-bar-label="Pug")
+            div.graph-bar__bar.graph-bar__bar--competent(tooltip="I wrote this whole site in Pug")
+          div.graph-bars__bar.graph-1__bar-5.graph__bar-5.graph-bar__bar--learning(data-bar-label="JQuery")
+            div.graph-bar__bar.graph-bar__bar--competent(tooltip="Will get to it someday")
+
+        div.graph-completion__levels
+          li.graph-completion__item Expert
+          li.graph-completion__item Proficient
+          li.graph-completion__item Competent
+          li.graph-completion__item Learning
+
+      div.graph-skills
+        ul.graph-skills__categories-container
+
+
+
+
+    //Graph 2
+    div.graphs__graph-2.graphs__item
+      div.graph__title-container
+        h2.graph__title-2 Backend Development
+      div.graph__parts-container
+        div.graph-bars
+          div.graph-bars__bar.graph-2__bar-1.graph__bar-1.graph-bar__bar--learning(data-bar-label="NodeJS")
+          div.graph-bars__bar.graph-2__bar-2.graph__bar-2.graph-bar__bar--learning(data-bar-label="GoLang")
+          div.graph-bars__bar.graph-2__bar-3.graph__bar-3.graph-bar__bar--learning(data-bar-label="PostgresQL")
+          div.graph-bars__bar.graph-2__bar-4.graph__bar-4.graph-bar__bar--learning(data-bar-label="AWS")
+          div.graph-bars__bar.graph-2__bar-5.graph__bar-5.graph-bar__bar--learning(data-bar-label="Docker")
+
+        ul.graph-completion__levels
+          li.graph-completion__item Expert
+          li.graph-completion__item Proficient
+          li.graph-completion__item Competent
+          li.graph-completion__item Learning
+
+      div.graph-skills
+        ul.graph-skills__categories-container
+
+
+    // Graph 3
+    div.graphs__graph-3.graphs__item
+      div.graph__title-container
+        h2.graph__title-3 Other Skills
+      div.graph__parts-container
+        div.graph-bars
+          div.graph-bars__bar.graph-3__bar-1.graph__bar-1.graph-bar__bar--learning(data-bar-label="Written Communication")
+          div.graph-bars__bar.graph-3__bar-2.graph__bar-2.graph-bar__bar--competent(data-bar-label="Problem Solving")
+          div.graph-bars__bar.graph-3__bar-3.graph__bar-3.graph-bar__bar--learning(data-bar-label="Project Management")
+          div.graph-bars__bar.graph-3__bar-4.graph__bar-4.graph-bar__bar--competent(data-bar-label="Research")
+          div.graph-bars__bar.graph-3__bar-5.graph__bar-5.graph-bar__bar--learning(data-bar-label="Public Speaking")
+
+        div.graph-completion__levels
+          li.graph-completion__item Expert
+          li.graph-completion__item Proficient
+          li.graph-completion__item Competent
+          li.graph-completion__item Learning
+
+      div.graph-skills
+
+        ul.graph-skills__categories-container.graph-skills__categories-container--big
+
+
+

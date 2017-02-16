@@ -27,6 +27,18 @@
 		"oAP": "\/build\/.idea\/dictionaries\/oscar.xml",
 		"oF": 0
 		},
+	"\/.idea\/inspectionProfiles\/profiles_settings.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.idea\/inspectionProfiles\/profiles_settings.xml",
+		"oF": 0
+		},
+	"\/.idea\/inspectionProfiles\/Project_Default.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.idea\/inspectionProfiles\/Project_Default.xml",
+		"oF": 0
+		},
 	"\/.idea\/misc.xml": {
 		"ft": 8192,
 		"oA": 2,
@@ -121,6 +133,22 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/images\/me.jpg": {
+		"ft": 16384,
+		"iS": 676595,
+		"oA": 0,
+		"oAP": "\/build\/images\/me.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/me_new.jpg": {
+		"ft": 16384,
+		"iS": 281808,
+		"oA": 0,
+		"oAP": "\/build\/images\/me_new.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -153,6 +181,27 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/skills.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/skills.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/styles\/_about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_about.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/styles\/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -162,6 +211,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/styles\/_carousel.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_colors.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -279,6 +341,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/styles\/_site-navigation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_skills.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_skills.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

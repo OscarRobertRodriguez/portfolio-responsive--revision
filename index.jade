@@ -28,7 +28,7 @@ html
           ul(class="primary-header__site noSelect")
 
             li(class="primary-header__item")
-              h1(class="primary-header__name  margin-padding--zero") Oscar R.  <span class="primary-header__name--shadow">Portfolio</span>
+              h1(class="primary-header__name  margin-padding--zero") Oscar Rodriguez  <span class="primary-header__name--shadow">Portfolio</span>
 
             li(class="primary-header__item  primary-search")
               input( class="primary-header__search" type="search")
@@ -48,7 +48,7 @@ html
                 input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1" checked)
                 label(for="tab-1__primary" class="primary-nav__label  col-2") Projects
 
-                div(class="primary-nav__content" )
+                div(class="primary-nav__content  project-content")
 
                   div(class="container")
                     p Some pretty cool projects that I have built take a look at my Shopping Cart that's one I learned a lot from.
@@ -267,6 +267,17 @@ html
 
                 div(class="primary-nav__content  about-content")
 
+                  div(class="media container  about")
+
+                      img(class="media-figure  about__img  about__img--rounded" src="images/me_new.jpg" alt="")
+                      p(class="media-body  about__info")
+                        | Hi, I'm Oscar a student at
+                        a(class="about__link" href="https://bovacademy.com/")  Bov Academy
+                        |  who likes weight lifting, a good sci-fi movie and making cool stuff with the power of Internet.
+
+
+
+
 
 
 
@@ -279,6 +290,11 @@ html
                 label(for="tab-3__primary" class="primary-nav__label  col-2") Skills
 
                 div(class="primary-nav__content")
+                  include skills
+
+
+
+
 
 
 
