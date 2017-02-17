@@ -5,8 +5,365 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- basic page needs-->
     <title>responsive portfolio</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <!-- mobile specific metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css-->
     <link rel="stylesheet" href="build/styles/main.css">
   </head>
+  <body>
+    <!-- primary page layout-->
+    
+    
+    <header class="primary-header  container  margin-padding--zero">
+      <ul class="primary-header__site noSelect">
+        <li class="primary-header__item">
+          <h1 class="primary-header__name  margin-padding--zero">Oscar Rodriguez  <span class="primary-header__name--shadow">Portfolio</span></h1>
+        </li>
+        <li class="primary-header__item  primary-search">
+          <input type="search" class="primary-header__search">
+          <button type="submit" class="primary-header__search__btn">search</button>
+        </li>
+      </ul>
+    </header>
+    <nav role="menu" class="primary-nav    noSelect">
+      <ul class="primary-nav__tabs  row">
+        <!-- first tab: Projects-->
+        <li class="primary-nav__tab">
+          <input type="radio" id="tab-1__primary" name="tab-group-1" checked class="primary-nav__radio">
+          <label for="tab-1__primary" class="primary-nav__label  col-2">Projects</label>
+          <div class="primary-nav__content  project-content">
+            <div class="container">
+              <p>Some pretty cool projects that I have built take a look at my Shopping Cart that's one I learned a lot from.</p>
+            </div>
+            <div class="project__container  container">
+              <div class="project-component">
+                <input type="radio" id="project__tab-01" name="tab-group-2" class="radio--none">
+                <input type="radio" id="project__tab-02" name="tab-group-2" class="radio--none">
+                <input type="radio" id="project__tab-03" name="tab-group-2" class="radio--none">
+                <input type="radio" id="project__tab-04" name="tab-group-2" class="radio--none">
+                <input type="radio" id="project__tab-05" name="tab-group-2" class="radio--none">
+                <input type="radio" id="project__tab-06" name="tab-group-2" class="radio--none">
+                <!-- Button Web Component: first tab-->
+                <div class="project-component--nav  col-3">
+                  <ul>
+                    <li>
+                      <label for="project__tab-01" class="project__label">Button Web Component</label>
+                    </li>
+                    <li>
+                      <label for="project__tab-02" class="project__label"> Sidebar Component</label>
+                    </li>
+                    <li>
+                      <label for="project__tab-03" class="project__label"> Forms and inputs</label>
+                    </li>
+                    <li>
+                      <label for="project__tab-04" class="project__label"> calculator</label>
+                    </li>
+                    <li>
+                      <label for="project__tab-05" class="project__label"> Product Listing page</label>
+                    </li>
+                    <li>
+                      <label for="project__tab-06" class="project__label"> css accordion
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-component--showcase container">
+                  <div class="project-content__carousel col-9">
+                    <ul class="project-carousel ">
+                      <input type="radio" id="1" name="activator" checked="checked" class="project-carousel--activator">
+                      <input type="radio" id="2" name="activator" class="project-carousel--activator">
+                      <input type="radio" id="3" name="activator" class="project-carousel--activator">
+                      <div class="project-carousel__controls">
+                        <label for="2" class="project-carousel__control  control--backward"></label>
+                        <label for="3" class="project-carousel__control  control--forward"></label>
+                      </div>
+                      <div class="project-carousel__controls">
+                        <label for="3" class="project-carousel__control  control--backward"></label>
+                        <label for="1" class="project-carousel__control  control--forward"></label>
+                      </div>
+                      <div class="project-carousel__controls">
+                        <label for="1" class="project-carousel__control  control--backward"></label>
+                        <label for="2" class="project-carousel__control  control--forward"></label>
+                      </div>
+                      <div class="project-carousel--record__player">
+                        <!--  track 1-->
+                        <div style="border: 1px solid black;" class="project-carousel__track">
+                          <li class="project-carousel__slide">
+                            <div class="slide  container">
+                              <div class="col-8 col-centered  slide__info  slide__info--large  centered">
+                                <p>These buttons were made using html and css only</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <div class="slide  ">
+                              <div class="col-8  col-centered  slide__image"><img src="images/btns.png" class="col-10 slide-image__source  margin-padding--zero col-centered"></div>
+                              <div class="col-8 col-centered  slide__info  slide__info--small  centered">
+                                <p>These buttons were made using html and css only</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <div class="slide  container">
+                              <div class="col-8  col-centered  slide__image"><img src="images/btns-gif.gif" class="col-10 slide-image__source  margin-padding--zero col-centered"></div>
+                              <div class="col-8 col-centered  slide__info  slide__info--small">
+                                <ul class="slide-links">
+                                  <li class="slide-links__item"><a href="0#" class="slide-links__link">view source</a></li>
+                                  <li class="slide-links__item"><a href="#" class="slide-links__link">view demo</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </div>
+                        <!-- track 2-->
+                        <div class="project-carousel__track">
+                          <li class="project-carousel__slide">
+                            <div style="width: 200px; border: 1px solid black; height: 100px; background: blue; margin: auto;"></div>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>5</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>6</h1>
+                          </li>
+                        </div>
+                        <!-- track 3-->
+                        <div class="project-carousel__track">
+                          <li class="project-carousel__slide">
+                            <h1>7</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>8</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>9</h1>
+                          </li>
+                        </div>
+                        <!-- track 4-->
+                        <div class="project-carousel__track">
+                          <li class="project-carousel__slide">
+                            <h1>10</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>11</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>12</h1>
+                          </li>
+                        </div>
+                        <!-- track 5-->
+                        <div class="project-carousel__track">
+                          <li class="project-carousel__slide">
+                            <h1>13</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>14</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>15</h1>
+                          </li>
+                        </div>
+                        <!-- track 6-->
+                        <div class="project-carousel__track">
+                          <li class="project-carousel__slide">
+                            <h1>16</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>17</h1>
+                          </li>
+                          <li class="project-carousel__slide">
+                            <h1>18</h1>
+                          </li>
+                        </div>
+                      </div>
+                      <div class="project-carousel__indicators">
+                        <label for="1" class="project-carousel__indicator"></label>
+                        <label for="2" class="project-carousel__indicator"></label>
+                        <label for="3" class="project-carousel__indicator"></label>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- End Project tab component-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- second tab  About-->
+        <li class="primary-nav__tab">
+          <input type="radio" id="tab-2__primary" name="tab-group-1" class="primary-nav__radio">
+          <label for="tab-2__primary" class="primary-nav__label  col-2">About</label>
+          <div class="primary-nav__content  about-content">
+            <div class="media container  about"><img src="images/me_new.jpg" alt="" class="media-figure  about__img  about__img--rounded">
+              <p class="media-body  about__info">Hi, I'm Oscar a student at<a href="https://bovacademy.com/" class="about__link"> Bov Academy</a> who likes weight lifting, a good sci-fi movie and making cool stuff with the power of Internet.</p>
+            </div>
+          </div>
+        </li>
+        <!-- third tab Skills-->
+        <li class="primary-nav__tab">
+          <input type="radio" id="tab-3__primary" name="tab-group-1" class="primary-nav__radio">
+          <label for="tab-3__primary" class="primary-nav__label  col-2">Skills</label>
+          <div class="primary-nav__content">
+            <!-- entire container for the skills section for the content-->
+            <section class="graphs container">
+              <!-- top completion bar for frontend and backend-->
+              <div class="graphs__completion-bar">
+                <div class="graphs__completion-bar__graph-1"><span>60%</span></div>
+                <div class="graphs__completion-bar__graph-2"><span>40%</span></div>
+              </div>
+              <!--    graph container-->
+              <div class="graphs__container">
+                <!--  Graph 1-->
+                <div class="graphs__graph-1 graphs__item">
+                  <div class="graph__title-container">
+                    <h2 class="graph__title-1">Frontend Development</h2>
+                  </div>
+                  <div class="graph__parts-container">
+                    <div class="graph-bars">
+                      <div data-bar-label="Javascript" class="graph-bars__bar graph-1__bar-1 graph__bar-1 graph-bar__bar--competent">
+                        <div tooltip="I just learned javascript" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="HTML/CSS" class="graph-bars__bar graph-1__bar-2 graph__bar-2 graph-bar__bar--proficient">
+                        <div tooltip="I use it everyday but could be better" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="ReactJS" class="graph-bars__bar graph-1__bar-3 graph__bar-3 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="Pug" class="graph-bars__bar graph-1__bar-4 graph__bar-4 graph-bar__bar--competent">
+                        <div tooltip="I wrote this whole site in Pug" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="JQuery" class="graph-bars__bar graph-1__bar-5 graph__bar-5 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                    </div>
+                    <div class="graph-completion__levels">
+                      <li class="graph-completion__item">Expert</li>
+                      <li class="graph-completion__item">Proficient</li>
+                      <li class="graph-completion__item">Competent</li>
+                      <li class="graph-completion__item">Learning</li>
+                    </div>
+                  </div>
+                  <div class="graph-skills">
+                    <ul class="graph-skills__categories-container"></ul>
+                  </div>
+                </div>
+                <!--Graph 2-->
+                <div class="graphs__graph-2 graphs__item">
+                  <div class="graph__title-container">
+                    <h2 class="graph__title-2">Backend Development</h2>
+                  </div>
+                  <div class="graph__parts-container">
+                    <div class="graph-bars">
+                      <div data-bar-label="NodeJS" class="graph-bars__bar graph-2__bar-1 graph__bar-1 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="GoLang" class="graph-bars__bar graph-2__bar-2 graph__bar-2 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="PostgresQL" class="graph-bars__bar graph-2__bar-3 graph__bar-3 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="AWS" class="graph-bars__bar graph-2__bar-4 graph__bar-4 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="Docker" class="graph-bars__bar graph-2__bar-5 graph__bar-5 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                    </div>
+                    <ul class="graph-completion__levels">
+                      <li class="graph-completion__item">Expert</li>
+                      <li class="graph-completion__item">Proficient</li>
+                      <li class="graph-completion__item">Competent</li>
+                      <li class="graph-completion__item">Learning</li>
+                    </ul>
+                  </div>
+                  <div class="graph-skills">
+                    <ul class="graph-skills__categories-container"></ul>
+                  </div>
+                </div>
+                <!-- Graph 3-->
+                <div class="graphs__graph-3 graphs__item">
+                  <div class="graph__title-container">
+                    <h2 class="graph__title-3">Other Skills</h2>
+                  </div>
+                  <div class="graph__parts-container">
+                    <div class="graph-bars">
+                      <div data-bar-label="Written Communication" class="graph-bars__bar graph-3__bar-1 graph__bar-1 graph-bar__bar--learning">
+                        <div tooltip="Need more practice" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="Problem Solving" class="graph-bars__bar graph-3__bar-2 graph__bar-2 graph-bar__bar--competent">
+                        <div tooltip="Yeah I solved some problems before" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="Project Management" class="graph-bars__bar graph-3__bar-3 graph__bar-3 graph-bar__bar--learning">
+                        <div tooltip="Working on it" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="Research" class="graph-bars__bar graph-3__bar-4 graph__bar-4 graph-bar__bar--competent">
+                        <div tooltip="Good but not great" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                      <div data-bar-label="Public Speaking" class="graph-bars__bar graph-3__bar-5 graph__bar-5 graph-bar__bar--learning">
+                        <div tooltip="Does talking to my dog count?" class="graph-bar__bar graph-bar__bar--competent"></div>
+                      </div>
+                    </div>
+                    <div class="graph-completion__levels">
+                      <li class="graph-completion__item">Expert</li>
+                      <li class="graph-completion__item">Proficient</li>
+                      <li class="graph-completion__item">Competent</li>
+                      <li class="graph-completion__item">Learning</li>
+                    </div>
+                  </div>
+                  <div class="graph-skills">
+                    <ul class="graph-skills__categories-container graph-skills__categories-container--big"></ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </li>
+        <!-- last and fourth tab : Contact-->
+        <li class="primary-nav__tab">
+          <input type="radio" id="tab-4__primary" name="tab-group-1" class="primary-nav__radio">
+          <label for="tab-4__primary" class="primary-nav__label col-2">Contact</label>
+          <div class="primary-nav__content  contact-content">
+            <form class="primary-form   ">
+              <h2 class="primary-form__title">Let's build something</h2>
+              <ul class="primary-form__inputs__container  col-12  hide-grid">
+                <li class="primary-form__item">
+                  <input type="text" required class="primary-form__name  primary-form__input--animate  modern__input">
+                  <label class="primary-form__label--animate">Name</label>
+                </li>
+                <li class="primary-form__item">
+                  <input type="text" required class="primary-form__email  primary-form__input--animate  modern__input">
+                  <label class="primary-form__label--animate">Email</label>
+                </li>
+              </ul>
+              <div class="primary-form__textarea__container">
+                <textarea placeholder="comment here..." class="primary-form__comment "></textarea>
+              </div>
+              <button type="submit" class="primary-form__button">send</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
+<!---->
+<!--div(class="primary-header__name__container row")-->
+<!---->
+<!--  div(class="primary-header__form row")-->
+
