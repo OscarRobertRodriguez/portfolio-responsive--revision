@@ -81,6 +81,14 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
+	"\/business-card.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/business-card.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/fonts\/leaguegothic-condensed-regular-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
@@ -117,6 +125,14 @@
 		"oAP": "\/build\/fonts\/LeagueGothic-Regular.otf",
 		"oF": 0
 		},
+	"\/images\/bg3.png": {
+		"ft": 32768,
+		"iS": 156977,
+		"oA": 0,
+		"oAP": "\/build\/images\/bg3.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/images\/btns-gif.gif": {
 		"ft": 4194304,
 		"iS": 898953,
@@ -132,6 +148,72 @@
 		"oAP": "\/build\/images\/btns.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/enc1.png": {
+		"ft": 32768,
+		"iS": 1553,
+		"oA": 0,
+		"oAP": "\/build\/images\/enc1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/enc2.png": {
+		"ft": 32768,
+		"iS": 1588,
+		"oA": 0,
+		"oAP": "\/build\/images\/enc2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/facebook.png": {
+		"ft": 32768,
+		"iS": 840,
+		"oA": 0,
+		"oAP": "\/build\/images\/facebook.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/github1.png": {
+		"ft": 32768,
+		"iS": 1172,
+		"oA": 0,
+		"oAP": "\/build\/images\/github1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/github2.png": {
+		"ft": 32768,
+		"iS": 1187,
+		"oA": 0,
+		"oAP": "\/build\/images\/github2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/ic_flip_black_24dp_2x.png": {
+		"ft": 32768,
+		"iS": 186,
+		"oA": 0,
+		"oAP": "\/build\/images\/ic_flip_black_24dp_2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/ic_flip_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/images\/ic_flip_black_24px.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/linkedin.png": {
+		"ft": 32768,
+		"iS": 970,
+		"oA": 0,
+		"oAP": "\/build\/images\/linkedin.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/me.jpg": {
 		"ft": 16384,
@@ -149,6 +231,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/images\/twitter.png": {
+		"ft": 32768,
+		"iS": 1026,
+		"oA": 0,
+		"oAP": "\/build\/images\/twitter.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -159,7 +249,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/index.html",
 		"oF": 2,
 		"oS": 0
 		},
@@ -198,6 +288,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/styles\/_about.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_business-card.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_business-card.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

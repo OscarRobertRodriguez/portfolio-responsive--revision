@@ -1,0 +1,168 @@
+
+
+
+.business-card {
+  display: flex;
+  position: relative;
+  height: 600px;
+  width: 50%;
+  margin: 0 auto;
+  flex: 2 0 300px;
+  text-align: center;
+  max-width: 500px;
+
+  @include forSmallScreens(730) {
+    flex: 1 0  400px;
+    width: 90%;
+
+  }
+  @include forSmallScreens(430) {
+    flex: 1 0 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+
+.business-card__front,
+.business-card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+
+.business-card__front {
+  background: url(../images/bg3.png) no-repeat;
+  background-size: cover;
+}
+
+.business-card__back {
+  background: url(../images/me_new.jpg) no-repeat;
+  background-size: cover;
+  transform: rotateY(-180deg);
+}
+
+
+  .business-card__back-image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+//.business-card--flip:hover .business-card__front {
+//  transform: rotateY(-180deg);
+//}
+//
+//.business-card--flip:hover .business-card__back {
+//  transform: rotateY(0deg);
+//}
+
+
+
+
+// begin flexbox styling
+
+.business-card__front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card-front__main-heading,
+.card-front__job-title  {
+  padding: 20px 0  0 0 ;
+  margin: 0;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 2.5em;
+}
+
+
+.card-front__main-heading {
+
+}
+
+
+
+.card-front__job-title {
+  font-size: 1.3em;
+  box-shadow: 0px 2px 0px #ccc;
+
+}
+
+
+.card-front__website,
+.card-front__email {
+  padding: 0;
+  margin: 0;
+}
+
+.card-front__email > a,
+.card-front__website > a {
+  color: black;
+  padding: 0;
+  margin: 0;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  transition: color .1s ease-in;
+
+  @include forSmallScreens(455) {
+    font-size: .8em;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+
+.social-icons {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.social-icons__item > img {
+ border-radius: 50%;
+  width: 50px;
+
+  &:hover {
+    border: 5px solid white;
+  }
+}
+
+
+.card-front__quote {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: center;
+  border-left: 1px dashed white;
+  border-right: 1px dashed white;
+  padding: 0 10px;
+
+  &:first-letter {
+    font-size: 1.8em;
+  }
+}
+
+
+.card-front__quote-author {
+  display: block;
+  color: #ccc;
+  padding: .5em 0;
+  white-space: nowrap;
+}

@@ -11,7 +11,7 @@
     <!-- mobile specific metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css-->
-    <link rel="stylesheet" href="build/styles/main.css">
+    <link rel="stylesheet" href="/build/styles/main.css">
   </head>
   <body>
     <!-- primary page layout-->
@@ -209,8 +209,26 @@
           <input type="radio" id="tab-2__primary" name="tab-group-1" class="primary-nav__radio">
           <label for="tab-2__primary" class="primary-nav__label  col-2">About</label>
           <div class="primary-nav__content  about-content">
-            <div class="media container  about"><img src="images/me_new.jpg" alt="" class="media-figure  about__img  about__img--rounded">
-              <p class="media-body  about__info">Hi, I'm Oscar a student at<a href="https://bovacademy.com/" class="about__link"> Bov Academy</a> who likes weight lifting, a good sci-fi movie and making cool stuff with the power of Internet.</p>
+            <div class="container  about">
+              <div class="business-card business-card--flip">
+                <div class="business-card__front">
+                  <h1 class="card-front__main-heading">oscar rodriguez</h1>
+                  <h2 class="card-front__job-title">full-stack developer</h2>
+                  <blockquote class="card-front__quote">
+                    Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.
+                    <span class="card-front__quote-author">Thomas A.Edison</span>
+                  </blockquote>
+                  <h3 class="card-front__email"><a href="google.com">oscarrobertrodriguez@gmail.com</a></h3>
+                  <h3 class="card-front__website"><a href="0#">oscarRR.com</a></h3>
+                  <div class="social-icons"><a href="0#" class="social-icons__item"><img src="images/twitter.png"></a><a href="0#" class="social-icons__item"><img src="images/github1.png"></a><a href="0#" class="social-icons__item"><img src="images/facebook.png"></a><a href="0#" class="social-icons__item"><img src="images/linkedin.png"></a></div>
+                </div>
+                <div class="business-card__back">
+                  <!--img.business-card__back-image(src="images/me_new.jpg")-->
+                </div>
+              </div>
+              <div class="about-me">
+                <p class="about__info">Hi, I'm Oscar a student at<a href="https://bovacademy.com/" class="about__link"> Bov Academy</a> who likes weight lifting, a good sci-fi movie and making cool stuff with the power of Internet.</p>
+              </div>
             </div>
           </div>
         </li>
@@ -362,8 +380,3 @@
     </nav>
   </body>
 </html>
-<!---->
-<!--div(class="primary-header__name__container row")-->
-<!---->
-<!--  div(class="primary-header__form row")-->
-
