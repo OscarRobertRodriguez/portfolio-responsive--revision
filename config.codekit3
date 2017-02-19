@@ -81,11 +81,13 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
-	"\/business-card.html": {
-		"ft": 8192,
-		"oA": 2,
+	"\/business-card.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
 		"oAP": "\/build\/business-card.html",
-		"oF": 0
+		"oF": 0,
+		"oS": 0
 		},
 	"\/fonts\/leaguegothic-condensed-regular-webfont.ttf": {
 		"ft": 8192,
@@ -123,6 +125,22 @@
 		"oAP": "\/build\/fonts\/LeagueGothic-Regular.otf",
 		"oF": 0
 		},
+	"\/images\/accordian.gif": {
+		"ft": 4194304,
+		"iS": 1340618,
+		"oA": 0,
+		"oAP": "\/build\/images\/accordian.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/accordian.png": {
+		"ft": 32768,
+		"iS": 14997,
+		"oA": 0,
+		"oAP": "\/build\/images\/accordian.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/images\/bg3.png": {
 		"ft": 32768,
 		"iS": 146899,
@@ -144,6 +162,22 @@
 		"iS": 194191,
 		"oA": 0,
 		"oAP": "\/build\/images\/btns.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/calculator.gif": {
+		"ft": 4194304,
+		"iS": 748344,
+		"oA": 0,
+		"oAP": "\/build\/images\/calculator.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/calculator.png": {
+		"ft": 32768,
+		"iS": 14234,
+		"oA": 0,
+		"oAP": "\/build\/images\/calculator.png",
 		"oF": 0,
 		"opt": 1
 		},
@@ -187,29 +221,59 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/images\/ic_flip_black_24dp_2x.png": {
+	"\/images\/ic_flip_to_back_white_36dp_1x.png": {
 		"ft": 32768,
-		"iS": 186,
+		"iS": 224,
 		"oA": 0,
-		"oAP": "\/build\/images\/ic_flip_black_24dp_2x.png",
+		"oAP": "\/build\/images\/ic_flip_to_back_white_36dp_1x.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/images\/ic_flip_black_24px.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"\/images\/ic_flip_to_front_white_36dp_1x.png": {
+		"ft": 32768,
+		"iS": 215,
 		"oA": 0,
-		"oAP": "\/build\/images\/ic_flip_black_24px.svg",
+		"oAP": "\/build\/images\/ic_flip_to_front_white_36dp_1x.png",
 		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
+		"opt": 1
+		},
+	"\/images\/image gallery.png": {
+		"ft": 32768,
+		"iS": 65230,
+		"oA": 0,
+		"oAP": "\/build\/images\/image gallery.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/imageGallery.gif": {
+		"ft": 4194304,
+		"iS": 10835491,
+		"oA": 0,
+		"oAP": "\/build\/images\/imageGallery.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/linkedin.png": {
 		"ft": 32768,
 		"iS": 658,
 		"oA": 0,
 		"oAP": "\/build\/images\/linkedin.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/loginForm.gif": {
+		"ft": 4194304,
+		"iS": 14163796,
+		"oA": 0,
+		"oAP": "\/build\/images\/loginForm.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/loginform.png": {
+		"ft": 32768,
+		"iS": 64072,
+		"oA": 0,
+		"oAP": "\/build\/images\/loginform.png",
 		"oF": 0,
 		"opt": 1
 		},
@@ -229,11 +293,19 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/images\/Screen Shot 2017-02-10 at 2.03.56 PM.png": {
-		"ft": 32768,
-		"iS": 194191,
+	"\/images\/shoppingCart.gif": {
+		"ft": 4194304,
+		"iS": 1104755,
 		"oA": 0,
-		"oAP": "\/build\/images\/Screen Shot 2017-02-10 at 2.03.56 PM.png",
+		"oAP": "\/build\/images\/shoppingCart.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/shoppingCart.png": {
+		"ft": 32768,
+		"iS": 7920,
+		"oA": 0,
+		"oAP": "\/build\/images\/shoppingCart.png",
 		"oF": 0,
 		"opt": 1
 		},
@@ -251,39 +323,234 @@
 		"oAP": "\/build\/index.html",
 		"oF": 2
 		},
-	"\/index.jade___jb_tmp___": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.jade___jb_tmp___",
-		"oF": 2
+	"\/index.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/index.html",
+		"oF": 0,
+		"oS": 0
 		},
-	"\/README.html": {
-		"ft": 8192,
-		"oA": 2,
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
 		"oAP": "\/build\/README.html",
-		"oF": 0
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
-	"\/skills.html": {
-		"ft": 8192,
-		"oA": 2,
+	"\/skills.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
 		"oAP": "\/build\/skills.html",
-		"oF": 0
+		"oF": 0,
+		"oS": 0
 		},
-	"\/styles\/main.css": {
-		"aP": 1,
+	"\/styles\/_about.scss": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_about.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_business-card.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_business-card.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_carousel.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_colors.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_contact-form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_contact-form.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_global.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_global.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_normalize.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_primary-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_primary-header.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_projects-tab.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_projects-tab.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_site-navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_site-navigation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/_skills.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/_skills.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/styles\/main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/styles\/main.css",
-		"oF": 2,
-		"oS": 0
-		},
-	"\/styles\/main.scss___jb_tmp___": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/styles\/main.scss___jb_tmp___",
-		"oF": 0
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		}
 	},
 "hooks": [
