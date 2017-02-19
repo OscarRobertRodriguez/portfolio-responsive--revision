@@ -492,6 +492,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+input[type="radio"] {
+  display: none; }
+
 /*------------------------------------*  Media Object
 \*------------------------------------*/
 .media {
@@ -649,12 +652,14 @@ a {
       .primary-nav__tab {
         -webkit-box-flex: 1;
             -ms-flex: 1 0 600px;
-                flex: 1 0 600px; } }
+                flex: 1 0 600px;
+        margin: 10px; } }
     @media (max-width: 37.5em) {
       .primary-nav__tab {
         -webkit-box-flex: 1;
             -ms-flex: 1 0 300px;
-                flex: 1 0 300px; } }
+                flex: 1 0 300px;
+        margin: 10px; } }
   .primary-nav__radio {
     display: none; }
   .primary-nav__label {
@@ -705,10 +710,8 @@ a {
     letter-spacing: 0; }
     @media (max-width: 64em) {
       .primary-nav__radio:checked ~ label {
-        z-index: 0;
-        border-bottom: 1px solid black; } }
+        z-index: 0; } }
   .primary-nav__radio:checked ~ .primary-nav__content {
-    outline: 1px solid red;
     z-index: 2;
     padding: 20px;
     min-height: 80em; }
@@ -734,9 +737,12 @@ a {
 
 /*------------------------------------*  #PROJECTS-TAB
 \*------------------------------------*/
-@media (max-width: 54.375em) {
-  .project__container {
-    height: 100%; } }
+.project__container {
+  max-width: 800px;
+  margin: auto; }
+  @media (max-width: 54.375em) {
+    .project__container {
+      height: 100%; } }
 
 .project-component {
   position: relative;
@@ -827,6 +833,10 @@ a {
   cursor: pointer; }
   .project-component--nav label:hover {
     border-right: 10px solid black; }
+    @media (max-width: 54.375em) {
+      .project-component--nav label:hover {
+        border-right: 10px solid black;
+        border-left: 10px solid black; } }
 
 .project-component--showcase {
   position: relative;
@@ -843,21 +853,39 @@ a {
 
 .project-component input:nth-child(1):checked ~ .project-component--nav > ul > li:nth-child(1) > label {
   border-right: 10px solid black; }
+  @media (max-width: 54.375em) {
+    .project-component input:nth-child(1):checked ~ .project-component--nav > ul > li:nth-child(1) > label {
+      border-left: 10px solid black; } }
 
 .project-component input:nth-child(2):checked ~ .project-component--nav > ul > li:nth-child(2) > label {
   border-right: 10px solid black; }
+  @media (max-width: 54.375em) {
+    .project-component input:nth-child(2):checked ~ .project-component--nav > ul > li:nth-child(2) > label {
+      border-left: 10px solid black; } }
 
 .project-component input:nth-child(3):checked ~ .project-component--nav > ul > li:nth-child(3) > label {
   border-right: 10px solid black; }
+  @media (max-width: 54.375em) {
+    .project-component input:nth-child(3):checked ~ .project-component--nav > ul > li:nth-child(3) > label {
+      border-left: 10px solid black; } }
 
 .project-component input:nth-child(4):checked ~ .project-component--nav > ul > li:nth-child(4) > label {
   border-right: 10px solid black; }
+  @media (max-width: 54.375em) {
+    .project-component input:nth-child(4):checked ~ .project-component--nav > ul > li:nth-child(4) > label {
+      border-left: 10px solid black; } }
 
 .project-component input:nth-child(5):checked ~ .project-component--nav > ul > li:nth-child(5) > label {
   border-right: 10px solid black; }
+  @media (max-width: 54.375em) {
+    .project-component input:nth-child(5):checked ~ .project-component--nav > ul > li:nth-child(5) > label {
+      border-left: 10px solid black; } }
 
 .project-component input:nth-child(6):checked ~ .project-component--nav > ul > li:nth-child(6) > label {
   border-right: 10px solid black; }
+  @media (max-width: 54.375em) {
+    .project-component input:nth-child(6):checked ~ .project-component--nav > ul > li:nth-child(6) > label {
+      border-left: 10px solid black; } }
 
 /*------------------------------------*  #CAROUSEL
 \*------------------------------------*/
@@ -890,12 +918,16 @@ a {
 .project-component input:nth-child(6):checked ~ .project-component--showcase > .project-content__carousel > .project-carousel > .project-carousel--record__player > .project-carousel__track:nth-child(6) {
   display: block; }
 
+.project-intro {
+  font-size: 1.3em; }
+
 .project-carousel {
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background: #bdbdbc;
+  background: #293b54;
+  border-radius: 5px;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -903,12 +935,6 @@ a {
   margin: 0;
   text-align: center;
   list-style-type: none; }
-  .project-carousel:before {
-    position: relative;
-    top: 30px;
-    font-size: 20px;
-    content: "Click A Tab To Begin";
-    background: transparent; }
 
 .project-carousel__controls,
 .project-carousel--activator {
@@ -1150,9 +1176,9 @@ a {
   height: 800px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1173,6 +1199,7 @@ a {
   @media (max-width: 45.625em) {
     .about-me {
       position: absolute;
+      display: none;
       bottom: 0;
       left: 0; } }
 
@@ -1185,12 +1212,22 @@ a {
     .about__info {
       font-size: 1.5em; } }
 
+.about__info--visible {
+  display: none; }
+  @media (max-width: 45.625em) {
+    .about__info--visible {
+      display: block;
+      color: #ccc; } }
+
 .about__link {
   white-space: nowrap;
   color: blue;
   letter-spacing: 1px;
   -webkit-transition: letter-spacing .2s ease-in;
   transition: letter-spacing .2s ease-in; }
+  @media (max-width: 45.625em) {
+    .about__link {
+      color: #d9d9ff; } }
   .about__link:hover {
     text-decoration: underline;
     letter-spacing: 2px; }
@@ -1198,6 +1235,7 @@ a {
 .graphs {
   width: 100%;
   margin: auto;
+  margin-top: 20px;
   max-width: 1500px;
   height: auto;
   display: -webkit-box;
@@ -1667,6 +1705,10 @@ a {
   height: 600px;
   width: 50%;
   margin: 0 auto;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-box-flex: 2;
       -ms-flex: 2 0 300px;
           flex: 2 0 300px;
@@ -1708,12 +1750,54 @@ a {
 .business-card__back {
   background: url(../images/me_new.jpg) no-repeat;
   background-size: cover;
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.card-front__label,
+.card-back__label {
+  cursor: pointer; }
+
+.business-card:hover .business-card__front {
+  -webkit-transform: rotateY(-5deg);
+          transform: rotateY(-5deg);
+  box-shadow: 5px 2px 10px #ccc; }
+  @media (max-width: 51.875em) {
+    .business-card:hover .business-card__front {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg); } }
+
+/* flip animation for front icon*/
+#flip-effect--back-radio[type="radio"]:checked ~ .business-card__front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg); }
 
-.business-card__back-image {
-  width: 100%;
-  height: 100%; }
+#flip-effect--back-radio[type="radio"]:checked ~ .business-card__back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg); }
+
+/* back flip animation*/
+#flip-effect--front-radio[type="radio"]:checked ~ .business-card__front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg); }
+
+#flip-effect--front-radio[type="radio"]:checked ~ .business-card__back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
 
 .business-card__front {
   display: -webkit-box;
@@ -1741,6 +1825,9 @@ a {
 .card-front__job-title {
   font-size: 1.3em;
   box-shadow: 0px 2px 0px #ccc; }
+  @media (max-width: 28.125em) {
+    .card-front__job-title {
+      font-size: 1em; } }
 
 .card-front__website,
 .card-front__email {
@@ -1799,6 +1886,21 @@ a {
   color: #ccc;
   padding: .5em 0;
   white-space: nowrap; }
+
+.card-front__flip-icon {
+  position: absolute;
+  right: 15px;
+  top: 85px;
+  height: 3em;
+  width: 3em;
+  display: block;
+  border-radius: 40%; }
+  .card-front__flip-icon:hover {
+    background: black; }
+  @media (max-width: 28.125em) {
+    .card-front__flip-icon {
+      width: 3em;
+      height: 3em; } }
 
 /*------------------------------------*  #FOOTER
 \*------------------------------------*/
