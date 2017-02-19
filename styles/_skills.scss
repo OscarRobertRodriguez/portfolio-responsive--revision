@@ -152,6 +152,7 @@
 
         @include forSmallScreens(460) {
           box-shadow: 5px 1px 1px rgba(204,204,204,0.75);
+          width: 40px;
         }
       }
 

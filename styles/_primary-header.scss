@@ -59,6 +59,11 @@
     @include forSmallScreens(1036) {
       font-size: 2.5em;
     }
+
+    @include forSmallScreens(460) {
+      letter-spacing: 0;
+      padding: 0;
+    }
   }
 
   &__name--shadow {
@@ -102,6 +107,7 @@
     font-size: 2em;
     box-sizing: border-box;
     outline: none;
+    min-width: 0px;
 
     @include forSmallScreens(460) {
       width: 270px;
