@@ -24,14 +24,6 @@
 
 
 
-// sass for loop to target carousel so that it is displayed for that tab on tab click
-
-//@for $i from 1 through 2 {
-//  .project-component input:nth-child(#{$i}):checked ~ .project-component--showcase  .project-content__carousel:nth-child(#{$i})    {
-//   display: block;
-//  }
-//}
-
 
 // sass for loop that changes carousel tracks on label click
 
@@ -42,6 +34,10 @@
 }
 
 
+
+.project-intro {
+  font-size: 1.3em;
+}
 
 
 
@@ -54,7 +50,8 @@
   right: 0;
   left: 0;
   width: 100%;
-  background: hsla(29, 1%, 74%, 1);
+  background: #293b54;
+  border-radius: 5px;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -63,13 +60,6 @@
   text-align: center;
   list-style-type: none;
 
-  &:before {
-    position: relative;
-    top: 30px;
-    font-size: 20px;
-    content: "Click A Tab To Begin";
-    background: transparent;
-  }
 }
 
 

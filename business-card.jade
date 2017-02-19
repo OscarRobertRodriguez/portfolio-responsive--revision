@@ -2,11 +2,14 @@
 
 
 
-div.business-card.business-card--flip
 
+div.business-card.business-card--flip
+  input(type="radio" id="flip-effect--back-radio" name="flip-card__1")
   div.business-card__front
     h1.card-front__main-heading oscar rodriguez
     h2.card-front__job-title full-stack developer
+    label(class="card-front__label" for='flip-effect--back-radio')
+      img.card-front__flip-icon(src="../images/ic_flip_to_back_white_36dp_1x.png")
 
 
     blockquote.card-front__quote
@@ -29,7 +32,12 @@ div.business-card.business-card--flip
           img(src="images/linkedin.png")
 
 
-
+  input(type="radio" id="flip-effect--front-radio" name="flip-card__1")
   div.business-card__back
-    //img.business-card__back-image(src="images/me_new.jpg")
+   label(class="card-back__label" for="flip-effect--front-radio")
+     img.card-front__flip-icon(src="../images/ic_flip_to_back_white_36dp_1x.png")
+   p(class="about__info about__info--visible")
+    | Hi, I'm Oscar a student at
+    a(class="about__link" href="https://bovacademy.com/")  Bov Academy.
+    |  I like weight lifting, a good sci-fi movie and making cool stuff with the power of Internet.
 

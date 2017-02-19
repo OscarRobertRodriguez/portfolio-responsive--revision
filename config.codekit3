@@ -125,6 +125,22 @@
 		"oAP": "\/build\/fonts\/LeagueGothic-Regular.otf",
 		"oF": 0
 		},
+	"\/images\/accordian.gif": {
+		"ft": 4194304,
+		"iS": 1340618,
+		"oA": 0,
+		"oAP": "\/build\/images\/accordian.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/accordian.png": {
+		"ft": 32768,
+		"iS": 14997,
+		"oA": 0,
+		"oAP": "\/build\/images\/accordian.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/images\/bg3.png": {
 		"ft": 32768,
 		"iS": 156977,
@@ -146,6 +162,22 @@
 		"iS": 265926,
 		"oA": 0,
 		"oAP": "\/build\/images\/btns.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/calculator.gif": {
+		"ft": 4194304,
+		"iS": 748344,
+		"oA": 0,
+		"oAP": "\/build\/images\/calculator.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/calculator.png": {
+		"ft": 32768,
+		"iS": 14234,
+		"oA": 0,
+		"oAP": "\/build\/images\/calculator.png",
 		"oF": 0,
 		"opt": 1
 		},
@@ -189,23 +221,37 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/images\/ic_flip_black_24dp_2x.png": {
+	"\/images\/ic_flip_to_back_white_36dp_1x.png": {
 		"ft": 32768,
-		"iS": 186,
+		"iS": 224,
 		"oA": 0,
-		"oAP": "\/build\/images\/ic_flip_black_24dp_2x.png",
+		"oAP": "\/build\/images\/ic_flip_to_back_white_36dp_1x.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/images\/ic_flip_black_24px.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"\/images\/ic_flip_to_front_white_36dp_1x.png": {
+		"ft": 32768,
+		"iS": 215,
 		"oA": 0,
-		"oAP": "\/build\/images\/ic_flip_black_24px.svg",
+		"oAP": "\/build\/images\/ic_flip_to_front_white_36dp_1x.png",
 		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
+		"opt": 1
+		},
+	"\/images\/image gallery.png": {
+		"ft": 32768,
+		"iS": 65230,
+		"oA": 0,
+		"oAP": "\/build\/images\/image gallery.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/imageGallery.gif": {
+		"ft": 4194304,
+		"iS": 10835491,
+		"oA": 0,
+		"oAP": "\/build\/images\/imageGallery.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/linkedin.png": {
 		"ft": 32768,
@@ -214,6 +260,22 @@
 		"oAP": "\/build\/images\/linkedin.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/images\/loginForm.gif": {
+		"ft": 4194304,
+		"iS": 14163796,
+		"oA": 0,
+		"oAP": "\/build\/images\/loginForm.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/loginform.png": {
+		"ft": 32768,
+		"iS": 64072,
+		"oA": 0,
+		"oAP": "\/build\/images\/loginform.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/me.jpg": {
 		"ft": 16384,
@@ -230,6 +292,22 @@
 		"oAP": "\/build\/images\/me_new.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/shoppingCart.gif": {
+		"ft": 4194304,
+		"iS": 1104755,
+		"oA": 0,
+		"oAP": "\/build\/images\/shoppingCart.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/shoppingCart.png": {
+		"ft": 32768,
+		"iS": 7920,
+		"oA": 0,
+		"oAP": "\/build\/images\/shoppingCart.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/twitter.png": {
 		"ft": 32768,

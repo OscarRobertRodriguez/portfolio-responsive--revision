@@ -14,7 +14,7 @@
   max-width: 1000px;
   height: 800px;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
 
 
@@ -31,6 +31,7 @@
 
   @include forSmallScreens(730) {
     position: absolute;
+    display: none;
     bottom: 0;
     left: 0;
   }
@@ -52,16 +53,30 @@
     @include forSmallScreens(730) {
       font-size: 1.5em;
     }
-
-
-
   }
+
+
+  .about__info--visible {
+    display: none;
+
+    @include forSmallScreens(730) {
+      display: block;
+      color: #ccc;
+    }
+  }
+
+
+
 
     .about__link {
       white-space: nowrap;
       color: blue;
       letter-spacing: 1px;
       transition: letter-spacing .2s ease-in;
+
+      @include forSmallScreens(730) {
+        color: #d9d9ff;
+      }
 
       &:hover {
        text-decoration: underline;

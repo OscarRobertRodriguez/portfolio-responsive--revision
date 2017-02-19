@@ -4,7 +4,8 @@
 
 
 .project__container {
-
+  max-width: 800px;
+  margin: auto;
 
  @include forSmallScreens(870) {
    height: 100%;
@@ -94,6 +95,11 @@
 
   &:hover {
     border-right: 10px solid black;
+
+    @include forSmallScreens(870) {
+      border-right: 10px solid black;
+      border-left: 10px solid black;
+    }
   }
 }
 
@@ -125,6 +131,10 @@
 @for $i from 1 through 6 {
   .project-component input:nth-child(#{$i}):checked ~ .project-component--nav > ul > li:nth-child(#{$i}) > label {
     border-right: 10px solid black;
+
+    @include forSmallScreens(870) {
+      border-left: 10px solid black;
+    }
 
   }
 

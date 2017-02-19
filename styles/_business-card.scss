@@ -7,6 +7,8 @@
   height: 600px;
   width: 50%;
   margin: 0 auto;
+  perspective: 1000px;
+  transform-style: preserve-3d;
   flex: 2 0 300px;
   text-align: center;
   max-width: 500px;
@@ -46,23 +48,58 @@
 .business-card__back {
   background: url(../images/me_new.jpg) no-repeat;
   background-size: cover;
+  filter: blur(.5px);
   transform: rotateY(-180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front__label,
+.card-back__label {
+  cursor: pointer;
+
+}
+// This code creates the flip effect where using radio buttons to cause the action
+
+
+
+.business-card:hover  .business-card__front {
+  transform: rotateY(-5deg);
+  box-shadow: 5px 2px 10px #ccc;
+
+  @include  forSmallScreens(830) {
+    transform: rotateY(0deg);
+  }
 }
 
 
-  .business-card__back-image {
-    width: 100%;
-    height: 100%;
-  }
 
 
-//.business-card--flip:hover .business-card__front {
-//  transform: rotateY(-180deg);
-//}
-//
-//.business-card--flip:hover .business-card__back {
-//  transform: rotateY(0deg);
-//}
+/* flip animation for front icon*/
+
+#flip-effect--back-radio[type="radio"]:checked ~  .business-card__front {
+  transform: rotateY(-180deg);
+}
+
+#flip-effect--back-radio[type="radio"]:checked ~  .business-card__back {
+  transform: rotateY(0deg);
+}
+
+
+
+/* back flip animation*/
+
+#flip-effect--front-radio[type="radio"]:checked ~ .business-card__front {
+  transform: rotateY(0deg);
+}
+
+#flip-effect--front-radio[type="radio"]:checked ~ .business-card__back {
+  transform: rotateY(180deg);
+}
+
+
 
 
 
@@ -97,6 +134,9 @@
   font-size: 1.3em;
   box-shadow: 0px 2px 0px #ccc;
 
+   @include forSmallScreens(450) {
+     font-size: 1em;
+   }
 }
 
 
@@ -165,4 +205,23 @@
   color: #ccc;
   padding: .5em 0;
   white-space: nowrap;
+}
+
+
+.card-front__flip-icon {
+  position: absolute;
+  right: 15px;
+  top: 85px;
+  height: 3em;
+  width: 3em;
+  display: block;
+  border-radius: 40%;
+  &:hover {
+    background: black;
+  }
+
+  @include forSmallScreens(450) {
+    width: 3em;
+    height: 3em;
+  }
 }

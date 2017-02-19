@@ -51,7 +51,7 @@ html
                 div(class="primary-nav__content  project-content")
 
                   div(class="container")
-                    p Some pretty cool projects that I have built take a look at my Shopping Cart that's one I learned a lot from.
+                    p.project-intro Some projects that I have built at Bov Academy. Click a tab to begin.
 
                   div(class="project__container  container" )
 
@@ -73,7 +73,7 @@ html
                           li
                             label(for="project__tab-01"  class="project__label") Button Web Component
                           li
-                            label(for="project__tab-02"  class="project__label")  Sidebar Component
+                            label(for="project__tab-02"  class="project__label")  Image Gallery
                           li
                             label(for="project__tab-03"  class="project__label")  Forms and inputs
                           li
@@ -119,7 +119,7 @@ html
 
 
                               //  track 1
-                              div(class="project-carousel__track" style="border: 1px solid black;")
+                              div(class="project-carousel__track")
                                 li(class="project-carousel__slide")
                                   div(class="slide  container")
                                     div(class="col-8 col-centered  slide__info  slide__info--large  centered")
@@ -146,38 +146,80 @@ html
                                       ul(class="slide-links")
 
                                         li(class="slide-links__item")
-                                          a(class="slide-links__link" href="0#") view source
+                                          a(class="slide-links__link" href="https://github.com/OscarRobertRodriguez/learning-web-components") view source
 
                                         li(class="slide-links__item")
-                                          a(class="slide-links__link" href="#") view demo
+                                          a(class="slide-links__link" href="https://oscarrobertrodriguez.github.io/learning-web-components/components/buttons/") view demo
 
 
 
                               // track 2
                               div(class="project-carousel__track")
                                 li(class="project-carousel__slide")
-                                  div(style="width: 200px; border: 1px solid black; height: 100px; background: blue; margin: auto;")
+                                  div(class="slide  container")
+                                    div(class="col-8 col-centered  slide__info  slide__info--large  centered")
+                                      p Image Gallery that is built using css and html only.
+
 
 
                                 li(class="project-carousel__slide")
-                                  h1 5
+                                  div(class="slide  ")
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/image gallery.png")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small  centered")
+                                      p Image Gallery that is built using css and html only.
 
                                 li(class="project-carousel__slide")
-                                  h1 6
+                                  div(class="slide  container")
+
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/imageGallery.gif")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small")
+
+                                      ul(class="slide-links")
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://github.com/OscarRobertRodriguez/bov-imageGallery") view source
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://oscarrobertrodriguez.github.io/bov-imageGallery/") view demo
 
 
 
                               // track 3
                               div(class="project-carousel__track")
                                 li(class="project-carousel__slide")
-                                  h1 7
+                                  div(class="slide  container")
+                                    div(class="col-8 col-centered  slide__info  slide__info--large  centered")
+                                      p various forms such as shopping cart and login forms used html, css, and javascript for validation
 
 
                                 li(class="project-carousel__slide")
-                                  h1 8
+                                  div(class="slide  ")
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/loginform.png")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small  centered")
+                                      p various forms such as shopping cart and login forms used html, css, and javascript for validation
+
 
                                 li(class="project-carousel__slide")
-                                  h1 9
+                                  div(class="slide  container")
+
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/loginForm.gif")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small")
+
+                                      ul(class="slide-links")
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://github.com/OscarRobertRodriguez/md-forms") view source
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://oscarrobertrodriguez.github.io/md-forms/") view demo
 
 
 
@@ -185,14 +227,35 @@ html
                               // track 4
                               div(class="project-carousel__track")
                                 li(class="project-carousel__slide")
-                                  h1 10
+                                  div(class="slide  container")
+                                    div(class="col-8 col-centered  slide__info  slide__info--large  centered")
+                                      p calculator uses html, css and javascript
 
 
                                 li(class="project-carousel__slide")
-                                  h1 11
+                                  div(class="slide  ")
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/calculator.png")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small  centered")
+                                      p calculator uses html, css and javascript
+
 
                                 li(class="project-carousel__slide")
-                                  h1 12
+                                  div(class="slide  container")
+
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/calculator.gif")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small")
+
+                                      ul(class="slide-links")
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://github.com/OscarRobertRodriguez/calculator") view source
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://oscarrobertrodriguez.github.io/calculator/") view demo
 
 
 
@@ -200,37 +263,80 @@ html
                               // track 5
                               div(class="project-carousel__track")
                                 li(class="project-carousel__slide")
-                                  h1 13
+                                  div(class="slide  container")
+                                    div(class="col-8 col-centered  slide__info  slide__info--large  centered")
+                                      p shopping cart that is built using css, html and javascript
 
 
                                 li(class="project-carousel__slide")
-                                  h1 14
+                                  div(class="slide  ")
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/shoppingCart.png")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small  centered")
+                                      p shopping cart that is built using css, html and javascript
+
 
                                 li(class="project-carousel__slide")
-                                  h1 15
+                                  div(class="slide  container")
+
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/shoppingCart.gif")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small")
+
+                                      ul(class="slide-links")
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://github.com/OscarRobertRodriguez/product-listing") view source
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="https://oscarrobertrodriguez.github.io/product-listing/") view demo
 
 
 
                               // track 6
                               div(class="project-carousel__track")
                                 li(class="project-carousel__slide")
-                                  h1 16
+                                  div(class="slide  container")
+                                    div(class="col-8 col-centered  slide__info  slide__info--large  centered")
+                                      p accordion that is built using css, html.
 
 
                                 li(class="project-carousel__slide")
-                                  h1 17
+                                  div(class="slide  ")
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/accordian.png")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small  centered")
+                                      p accordion that is built using css, html.
+
 
                                 li(class="project-carousel__slide")
-                                  h1 18
+                                  div(class="slide  container")
+
+                                    div(class="col-8  col-centered  slide__image")
+                                      img(class="col-10 slide-image__source  margin-padding--zero col-centered"  src="images/accordian.gif")
+
+                                    div(class="col-8 col-centered  slide__info  slide__info--small")
+
+                                      ul(class="slide-links")
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="http://codepen.io/nopity/pen/oBXpXW") view source
+
+                                        li(class="slide-links__item")
+                                          a(class="slide-links__link" href="http://codepen.io/nopity/pen/oBXpXW") view demo
 
 
 
 
 
-                            div(class="project-carousel__indicators")
-                              label(for="1" class="project-carousel__indicator")
-                              label(for="2" class="project-carousel__indicator")
-                              label(for="3" class="project-carousel__indicator")
+
+                        div(class="project-carousel__indicators")
+                                    label(for="1" class="project-carousel__indicator")
+                                    label(for="2" class="project-carousel__indicator")
+                                    label(for="3" class="project-carousel__indicator")
 
 
 
@@ -274,8 +380,8 @@ html
                     div.about-me
                       p(class="about__info")
                         | Hi, I'm Oscar a student at
-                        a(class="about__link" href="https://bovacademy.com/")  Bov Academy
-                        |  who likes weight lifting, a good sci-fi movie and making cool stuff with the power of Internet.
+                        a(class="about__link" href="https://bovacademy.com/")  Bov Academy.
+                        |  I like weight lifting, a good sci-fi movie/game and making cool stuff with the power of Internet.
 
 
 

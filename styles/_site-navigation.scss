@@ -42,11 +42,13 @@
     @include forSmallScreens(1024) {
 
       flex: 1 0 600px;
+      margin: 10px;
 
     }
 
     @include forSmallScreens(600) {
       flex: 1 0 300px;
+      margin: 10px;
     }
 
   }
@@ -134,13 +136,12 @@
 
     @include forSmallScreens(1024) {
       z-index: 0;
-      border-bottom: 1px solid black;
+
     }
 
   }
 
   &__radio:checked ~ .primary-nav__content {
-    outline: 1px solid red;
     z-index: 2;
     padding: 20px;
     min-height: 80em;
