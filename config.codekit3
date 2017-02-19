@@ -248,14 +248,14 @@
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.html",
+		"oAP": "\/build\/index.html",
 		"oF": 2
 		},
 	"\/index.jade___jb_tmp___": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/index.jade___jb_tmp___",
-		"oF": 0
+		"oAP": "\/index.jade___jb_tmp___",
+		"oF": 2
 		},
 	"\/README.html": {
 		"ft": 8192,
@@ -276,7 +276,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/styles\/main.css",
-		"oF": 0,
+		"oF": 2,
 		"oS": 0
 		},
 	"\/styles\/main.scss___jb_tmp___": {
