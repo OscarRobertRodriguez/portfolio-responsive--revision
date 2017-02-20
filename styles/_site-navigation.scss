@@ -113,9 +113,10 @@
       max-height: 0em;
       border: none;
       width: 100%;
+      opacity: 0;
       top: 0;
-      transform: translate3d(0,0,0);
-      transition: max-height .0125s ease-in;
+      //transform: translate3d(0,0,0);
+      transition: max-height 1s ease-in-out, opacity 1.2s ease;
     }
 
     @include forSmallScreens(600) {
@@ -161,7 +162,7 @@
     @include forSmallScreens(1024) {
       max-height: 120em;
       //transition: max-height .3s ease-in-out;
-
+      opacity: 1;
       min-height: 115em;
       padding: 0;
     }

@@ -24,7 +24,6 @@ html
 
 
         header(class="primary-header  container  margin-padding--zero")
-
           ul(class="primary-header__site noSelect")
 
             li(class="primary-header__item")
@@ -38,7 +37,7 @@ html
 
 
 
-        nav(class="primary-nav    noSelect" role="menu")
+        nav( class="primary-nav    noSelect" role="menu")
           ul(class="primary-nav__tabs  row")
 
 
@@ -333,10 +332,10 @@ html
 
 
 
-                        div(class="project-carousel__indicators")
-                                    label(for="1" class="project-carousel__indicator")
-                                    label(for="2" class="project-carousel__indicator")
-                                    label(for="3" class="project-carousel__indicator")
+                          div(class="project-carousel__indicators")
+                                      label(for="1" class="project-carousel__indicator")
+                                      label(for="2" class="project-carousel__indicator")
+                                      label(for="3" class="project-carousel__indicator")
 
 
 
@@ -415,11 +414,11 @@ html
                 input(type="radio" class="primary-nav__radio" id="tab-4__primary" name="tab-group-1")
                 label(for="tab-4__primary" class="primary-nav__label col-2") Contact
 
-                div(class="primary-nav__content  contact-content")
+                div(class="primary-nav__content  contact-content" )
 
 
 
-                  form(class="primary-form   ")
+                  form(class="primary-form")
                     h2(class="primary-form__title") Let's build something
 
                     ul(class="primary-form__inputs__container  col-12  hide-grid")
@@ -447,3 +446,18 @@ html
 
 
 
+  footer(class="primary-footer container")
+    div.primary-footer__wrapper
+      div.primary-footer__social-icons.primary-footer__item
+        a(href="https://github.com/OscarRobertRodriguez")
+          img(src="images/github2.png")
+        a(href="https://github.com/OscarRobertRodriguez")
+          img(src="images/twitter.png")
+        label(for="tab-4__primary")
+          img(src="images/email.png")
+
+      p.primary-footer__name.primary-footer__item
+       | oscar rodriguez
+
+      small.primary-footer__copyright.primary-footer__item
+       | &#169; All rights reserved.

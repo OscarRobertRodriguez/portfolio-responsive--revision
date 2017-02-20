@@ -10,3 +10,110 @@
 
 
 
+.primary-footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background: url("../images/bg2.png") repeat-x;
+  background-size: contain;
+  height: 200px;
+  bottom: -800px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+
+  @include  forSmallScreens(1274) {
+    bottom: -2000px;
+  }
+
+  @include forSmallScreens(1024) {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+
+.primary-footer__wrapper {
+  max-width: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+ .primary-footer__item {
+   flex: 1 0 0;
+ }
+
+.primary-footer__social-icons {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex: 1 0 60px;
+}
+
+  .primary-footer__social-icons > label > img {
+    height: 38px;
+  }
+
+.primary-footer__social-icons > label {
+  position: relative;
+
+  &::before {
+    opacity: .5;
+    position: absolute;
+    color: white;
+    top: -7px;
+    left: 1px;
+    font-size: .7em;
+    font-variant: small-caps;
+    content: "look up";
+    opacity: 0;
+    transition: opacity .5s ease-in;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+}
+
+
+  .primary-footer__social-icons > a,
+  .primary-footer__social-icons > label {
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+
+.primary-footer__social-icons > a:nth-child(1),
+.primary-footer__social-icons > a:nth-child(2) {
+  padding-bottom: 4px;
+}
+
+
+.primary-footer__name,
+.primary-footer__copyright {
+  color: #fff;
+  text-transform: uppercase;
+  opacity: .5;
+  font-size: .5em;
+}
+
+.primary-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5px;
+}
+
+
+.primary-footer__name {
+  opacity: 1;
+  font-size: 1.1em;
+}
