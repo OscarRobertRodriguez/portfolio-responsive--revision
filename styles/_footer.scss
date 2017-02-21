@@ -13,34 +13,45 @@
 .primary-footer {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   background: url("../images/bg2.png") repeat-x;
   background-size: contain;
-  height: 200px;
-  bottom: -800px;
+  height: 60px;
+  z-index: 2000;
+  bottom: 0;
   width: 100%;
   padding: 0;
   margin: 0;
 
 
-  @include  forSmallScreens(1274) {
-    bottom: -2000px;
-  }
+
 
   @include forSmallScreens(1024) {
     position: relative;
     bottom: 0;
     left: 0;
   }
+
+  @include forSmallScreens(776) {
+    height: 150px;
+  }
 }
 
 
 
 .primary-footer__wrapper {
-  max-width: 500px;
-  width: 500px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex: 1 0 0;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+
+  @include forSmallScreens(776) {
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 
@@ -50,11 +61,25 @@
  }
 
 .primary-footer__social-icons {
-  padding: 20px;
   display: flex;
+  max-width: 500px;
+  min-width: 300px;
+  padding-bottom: 5px;
   justify-content: space-around;
-  align-items: flex-start;
-  flex: 1 0 60px;
+  align-items: center;
+  flex: 3 0 300px;
+
+  @include forSmallScreens(914) {
+    padding-top: 10px;
+  }
+
+  @include forSmallScreens(776) {
+    padding: 0;
+    padding-top: 10px;
+    align-items: flex-end;
+    flex: 1 0 0;
+    margin: 0;
+  }
 }
 
   .primary-footer__social-icons > label > img {
@@ -86,6 +111,7 @@
 
   .primary-footer__social-icons > a,
   .primary-footer__social-icons > label {
+    cursor: pointer;
     &:hover {
       border-bottom: 1px solid white;
     }
@@ -107,13 +133,41 @@
 
 .primary-footer__copyright {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 0 0;
+  padding-bottom: 10px;
+  padding-right: 10px;
+
+
+  @include forSmallScreens(776) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 
 .primary-footer__name {
+  flex: 2 0 300px;
+  margin: 0;
+  display: flex;
+  min-width: 200px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
   opacity: 1;
   font-size: 1.1em;
+
+  @include forSmallScreens(914) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include forSmallScreens(776) {
+    align-items: flex-end;
+    flex: 1 0 0;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+  }
 }

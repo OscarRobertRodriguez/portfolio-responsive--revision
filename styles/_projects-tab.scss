@@ -35,6 +35,14 @@
 }
 
 
+.project-intro__container {
+  display: none;
+
+  @include forSmallScreens(870) {
+    display: block;
+  }
+}
+
 
 .project-component--nav {
 

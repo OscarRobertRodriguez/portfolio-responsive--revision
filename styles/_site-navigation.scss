@@ -97,12 +97,11 @@
   &__content {
     position: absolute;
     right: 0;
-    bottom: 0;
     left: 0;
     top: 100px;
     background: #fff;
     padding: 0;
-    height: 1000px;
+    height: 650px;
 
 
 
@@ -116,16 +115,9 @@
       opacity: 0;
       top: 0;
       //transform: translate3d(0,0,0);
-      transition: max-height 1s ease-in-out, opacity 1.2s ease;
+      transition: max-height .2s ease-in, opacity .2s ease;
     }
 
-    @include forSmallScreens(600) {
-
-    }
-
-    @include forSmallScreens(460) {
-
-    }
 
 
   }
@@ -149,21 +141,16 @@
 
   &__radio:checked ~ .primary-nav__content {
     z-index: 2;
-    padding: 20px;
-    min-height: 80em;
 
 
-    @include forSmallScreens(1274) {
-      min-height:  120em
-    }
+
 
 
 
     @include forSmallScreens(1024) {
       max-height: 120em;
-      //transition: max-height .3s ease-in-out;
       opacity: 1;
-      min-height: 115em;
+      min-height: 85em;
       padding: 0;
     }
 
@@ -177,14 +164,19 @@
 .primary-nav__radio:checked ~ .about-content {
 
   @include forSmallScreens(1024) {
-    max-height: 50em;
-    min-height: 50em;
+    max-height: 42em;
+    min-height: 42em;
   }
 }
 
 .primary-nav__radio:checked ~ .project-content {
 
   @include forSmallScreens(1024) {
+    max-height: 60em;
+    min-height: 60em;
+  }
+
+  @include forSmallScreens(870) {
     max-height: 80em;
     min-height: 80em;
   }

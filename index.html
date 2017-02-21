@@ -11,7 +11,7 @@
     <!-- mobile specific metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css-->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="build/styles/main.css">
   </head>
   <body>
     <!-- primary page layout-->
@@ -20,7 +20,7 @@
     <header class="primary-header  container  margin-padding--zero">
       <ul class="primary-header__site noSelect">
         <li class="primary-header__item">
-          <h1 class="primary-header__name  margin-padding--zero">Oscar Rodriguez  <span class="primary-header__name--shadow">Portfolio</span></h1>
+          <h1 class="primary-header__name  margin-padding--zero">Oscar Rodriguez</h1>
         </li>
         <li class="primary-header__item  primary-search">
           <input type="search" class="primary-header__search">
@@ -35,7 +35,7 @@
           <input type="radio" id="tab-1__primary" name="tab-group-1" checked class="primary-nav__radio">
           <label for="tab-1__primary" class="primary-nav__label  col-2">Projects</label>
           <div class="primary-nav__content  project-content">
-            <div class="container">
+            <div class="container  project-intro__container">
               <p class="project-intro">Some projects that I have built at Bov Academy. Click a tab to begin.</p>
             </div>
             <div class="project__container  container">
@@ -467,13 +467,14 @@
         </li>
       </ul>
     </nav>
+    <footer class="primary-footer container">
+      <div class="primary-footer__wrapper">
+        <div class="primary-footer__social-icons primary-footer__item"><a href="https://github.com/OscarRobertRodriguez"><img src="images/github2.png"></a><a href="https://github.com/OscarRobertRodriguez"><img src="images/twitter.png"></a>
+          <label for="tab-4__primary"><img src="images/email.png"></label>
+        </div>
+        <p class="primary-footer__name primary-footer__item">oscar rodriguez</p>
+        <p class="primary-footer__copyright primary-footer__item">&#169; All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
-<footer class="primary-footer container">
-  <div class="primary-footer__wrapper">
-    <div class="primary-footer__social-icons primary-footer__item"><a href="https://github.com/OscarRobertRodriguez"><img src="images/github2.png"></a><a href="https://github.com/OscarRobertRodriguez"><img src="images/twitter.png"></a>
-      <label for="tab-4__primary"><img src="images/email.png"></label>
-    </div>
-    <p class="primary-footer__name primary-footer__item">oscar rodriguez</p><small class="primary-footer__copyright primary-footer__item">&#169; All rights reserved.</small>
-  </div>
-</footer>

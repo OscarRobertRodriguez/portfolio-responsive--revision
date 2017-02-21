@@ -5,7 +5,7 @@
   width: 100%;
   margin: auto;
   margin-top: 20px;
-  max-width: 1500px;
+  max-width: 1600px;
   height: auto;
   display: flex;
   flex-flow: column;
@@ -13,7 +13,7 @@
   z-index: 0;
 
   @include forSmallScreens(400) {
-
+    margin: 0;
     padding: 0;
   }
 }
@@ -70,37 +70,52 @@
 
 
 .graphs__container {
-
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
+
+  @include  forSmallScreens(1025) {
+    flex-flow: column;
+  }
 
 }
 
     /* Begin styling/layout for each graph not the graph container*/
 
   .graphs__item {
-
-
-    flex: 1 0 600px;
     max-width: 600px;
-    min-width: 600px;
+    min-width: 315px;
+    max-height: 500px;
+    padding-top: 20px;
+    flex: 1 0 0;
 
-    @include forSmallScreens(1277) {
+    @include forSmallScreens(1025) {
       max-width: 100%;
     }
-    @include forSmallScreens(660) {
 
-      min-width: 0;
+
+  }
+
+
+
+  .graphs__graph-1, .graphs__graph-2, .graphs__graph-3 {
+    @include forSmallScreens(1025) {
+
     }
   }
 
-  .graphs__graph-2 {
-    margin-left: auto;
-  }
+  //.graphs__graph-2 {
+  //  @include forSmallScreens(1125) {
+  //    margin-left: auto;
+  //  }
+  //}
+  //
+  //.graphs__graph-3 {
+  //  @include forSmallScreens(1125) {
+  //    margin: auto;
+  //  }
+  //}
 
-  .graphs__graph-3 {
-    margin: auto;
-  }
+
 
     .graph__title-container {
       flex: 1;
@@ -150,9 +165,10 @@
         font-weight: bold;
 
 
+
         @include forSmallScreens(460) {
           box-shadow: 5px 1px 1px rgba(204,204,204,0.75);
-          width: 40px;
+          width: 20px;
         }
       }
 
@@ -238,8 +254,10 @@
     .graph-completion__levels {
       display: flex;
       flex-flow: column;
-      font-size: 1em;
+      font-size: .8em;
       font-weight: bold;
+      width: 50px;
+      min-width: 20px;
       flex: 1 0 0;
       order: 1;
 
@@ -253,6 +271,10 @@
         align-items: flex-start;
         justify-content: center;
         height: 80px;
+
+        @include forSmallScreens(1025) {
+          height: 50px;
+        }
       }
 
 
@@ -275,7 +297,7 @@
 
       .graph-skills__categories-container {
         display: flex;
-        height: 150px;
+        height: 100px;
         justify-content: space-around;
         align-items: flex-start;
         flex: 1 0 0;
