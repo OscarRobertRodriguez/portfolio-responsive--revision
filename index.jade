@@ -44,7 +44,32 @@ html
 
 
 
-              // first tab: Projects
+
+
+
+            // first tab  About
+            li(class="primary-nav__tab  primary-nav__about--change-order")
+              input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1" checked)
+              label(for="tab-2__primary" class="primary-nav__label  col-2") About
+
+              div(class="primary-nav__content  about-content")
+
+                div(class="container  about")
+                  include business-card
+
+
+                  div.about-me
+                    p(class="about__info")
+                      | Hi, I'm Oscar a student at
+                      a(class="about__link" href="https://bovacademy.com/")  Bov Academy.
+                      |  I like weight lifting, a good sci-fi movie/game and making cool stuff with the power of Internet.
+
+
+
+
+
+
+              // second tab: Projects
               li(class="primary-nav__tab")
                 input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1" )
                 label(for="tab-1__primary" class="primary-nav__label  col-2") Projects
@@ -346,44 +371,7 @@ html
 
 
 
-
-
-
-
-
-
-
-
               // End Project tab component
-
-
-
-
-
-
-
-
-
-
-
-
-
-              // second tab  About
-              li(class="primary-nav__tab")
-                input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1" checked)
-                label(for="tab-2__primary" class="primary-nav__label  col-2") About
-
-                div(class="primary-nav__content  about-content")
-
-                  div(class="container  about")
-                    include business-card
-
-
-                    div.about-me
-                      p(class="about__info")
-                        | Hi, I'm Oscar a student at
-                        a(class="about__link" href="https://bovacademy.com/")  Bov Academy.
-                        |  I like weight lifting, a good sci-fi movie/game and making cool stuff with the power of Internet.
 
 
 

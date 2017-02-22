@@ -7,7 +7,7 @@
 
 
 $ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
-$timing: .4s;
+$timing: .2s;
 
 /* styling for tabs navigation */
 
@@ -181,8 +181,8 @@ $timing: .4s;
 .primary-nav__radio:checked ~ .project-content {
 
   @include forSmallScreens(1151) {
-    max-height: 60em;
-    min-height: 60em;
+    max-height: 46em;
+    min-height: 44em;
   }
 
   @include forSmallScreens(870) {
@@ -190,3 +190,6 @@ $timing: .4s;
     min-height: 80em;
   }
 }
+
+
+
