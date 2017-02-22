@@ -4,9 +4,7 @@
 .graphs {
   width: 100%;
   margin: auto;
-  margin-top: 20px;
   max-width: 1600px;
-  height: auto;
   display: flex;
   flex-flow: column;
   align-items: stretch;
@@ -33,6 +31,7 @@
  flex: 1;
  flex-flow: row nowrap;
  height: 45px;
+ margin-top: 20px;
 
 
 }
@@ -71,10 +70,15 @@
 
 .graphs__container {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+
 
   @include  forSmallScreens(1025) {
     flex-flow: column;
+  }
+
+  @include forSmallScreens(1024) {
+    min-height: 92em;
   }
 
 }
@@ -159,6 +163,8 @@
 
       .graph-bars__bar {
         width: 50px;
+        max-height: 100%;
+        min-height: 50px;
         height: 50px;
         position: relative;
         box-shadow:  12px 1px 10px rgba(204,204,204,0.75);
@@ -182,7 +188,7 @@
         right: 0;
         padding: .15em 0;
         content: attr(data-bar-label);
-        font-size: 1em;
+        font-size: .9em;
         transform: rotate(45deg);
 
         @include forSmallScreens(460) {
@@ -230,20 +236,38 @@
    //  modifier classes named after completion levels
 
     .graph-bars__bar--expert {
+
       height: 100%;
+
     }
+
 
     .graph-bar__bar--proficient {
+
       height: 75%;
+
     }
+
+
+
 
     .graph-bar__bar--competent {
+
       height: 50%;
+
     }
 
+
+
     .graph-bar__bar--learning {
+
       height: 20%;
+
     }
+
+
+
+
 
 
 
@@ -297,7 +321,7 @@
 
       .graph-skills__categories-container {
         display: flex;
-        height: 100px;
+        height: 50px;
         justify-content: space-around;
         align-items: flex-start;
         flex: 1 0 0;
@@ -307,7 +331,7 @@
       }
 
       .graph-skills__categories-container--big {
-        height: 200px;
+        height: 220px;
       }
 
 

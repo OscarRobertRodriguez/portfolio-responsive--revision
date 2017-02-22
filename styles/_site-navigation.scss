@@ -5,6 +5,10 @@
 
 
 
+
+$ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
+$timing: .4s;
+
 /* styling for tabs navigation */
 
 .primary-nav {
@@ -42,13 +46,12 @@
     @include forSmallScreens(1024) {
 
       flex: 1 0 600px;
-      margin: 10px;
+
 
     }
 
     @include forSmallScreens(600) {
       flex: 1 0 300px;
-      margin: 10px;
     }
 
   }
@@ -58,30 +61,27 @@
   }
 
   &__label {
-    font-family: leagueGothicRegular;
+
     font-weight: 900;
     cursor: pointer;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
     position: relative;
     width: 100%;
-    font-size:1.9em;
+    font-size: 2.2em;
     padding: 1em;
     text-transform: uppercase;
     text-align: center;
+    color: white;
+    background: #03A9F4;
 
-    background: #fff;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px #ccc;
     left: 1px;
+    transition: background .2s ease;
 
 
     &:hover {
-      letter-spacing: 0;
       z-index: 3;
-      background: linear-gradient(181deg, rgba(255,255,255,1) 3%, rgba(255,255,255,1) 8%, rgba(255,255,255,1) 20%, rgba(247,247,247,1) 66%, rgba(202,202,202,1) 89%, rgba(191,191,191,1) 95%); /* w3c */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#BFBFBF',GradientType=0 ); /* ie6-9 */
-      border-bottom: 10px solid black;
+      border-bottom: 10px solid #FF4081;
+      background: #0288D1;
     }
 
 
@@ -98,7 +98,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    top: 100px;
+    top: 120px;
     background: #fff;
     padding: 0;
     height: 650px;
@@ -115,7 +115,7 @@
       opacity: 0;
       top: 0;
       //transform: translate3d(0,0,0);
-      transition: max-height .2s ease-in, opacity .2s ease;
+      transition: max-height $timing $ease;
     }
 
 
@@ -125,12 +125,8 @@
   // these styles give the ability for tabs to change
   &__radio:checked ~ label {
     outline: none;
-    background: white;
-    border-bottom: 8px solid black;
+    border-bottom: 10px solid #FF4081;
     z-index:3;
-    letter-spacing: 0;
-    background: linear-gradient(181deg, rgba(255,255,255,1) 3%, rgba(255,255,255,1) 8%, rgba(255,255,255,1) 20%, rgba(247,247,247,1) 66%, rgba(202,202,202,1) 89%, rgba(191,191,191,1) 95%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#BFBFBF',GradientType=0 ); /* ie6-9 */
 
     @include forSmallScreens(1024) {
       z-index: 0;
@@ -148,9 +144,9 @@
 
 
     @include forSmallScreens(1024) {
-      max-height: 120em;
+      max-height: 98em;
+      min-height: 98em;
       opacity: 1;
-      min-height: 85em;
       padding: 0;
     }
 
