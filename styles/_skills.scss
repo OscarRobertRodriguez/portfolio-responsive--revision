@@ -188,7 +188,7 @@
         right: 0;
         padding: .15em 0;
         content: attr(data-bar-label);
-        font-size: .9em;
+        font-size: .8em;
         transform: rotate(45deg);
 
         @include forSmallScreens(460) {
@@ -371,7 +371,7 @@
     */
   min-width: 3em;
   max-width: 21em;
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 5px 10px;

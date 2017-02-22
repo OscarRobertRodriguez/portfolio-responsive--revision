@@ -46,16 +46,14 @@ html
 
               // first tab: Projects
               li(class="primary-nav__tab")
-                input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1" checked)
+                input(type="radio" class="primary-nav__radio" id="tab-1__primary" name="tab-group-1" )
                 label(for="tab-1__primary" class="primary-nav__label  col-2") Projects
 
                 div(class="primary-nav__content  project-content")
 
                   div(class="container  project-intro__container")
                     p.project-intro Some projects that I have built at Bov Academy. Click a tab to begin.
-
                   div(class="project__container  container" )
-
                     div(class="project-component")
                       input(type="radio" id="project__tab-01" class="radio--none" name="tab-group-2")
                       input(type="radio" id="project__tab-02"  class="radio--none" name="tab-group-2")
@@ -71,6 +69,9 @@ html
                       div(class="project-component--nav  col-3" )
 
                         ul
+                          li
+                            p.project-component__tab-paragraph Click a tab to begin
+
                           li
                             label(for="project__tab-01"  class="project__label") Button Web Component
                           li
@@ -369,7 +370,7 @@ html
 
               // second tab  About
               li(class="primary-nav__tab")
-                input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1")
+                input(type="radio" class="primary-nav__radio" id="tab-2__primary" name="tab-group-1" checked)
                 label(for="tab-2__primary" class="primary-nav__label  col-2") About
 
                 div(class="primary-nav__content  about-content")

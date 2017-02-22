@@ -30,7 +30,7 @@
       align-content: center;
     }
 
-    @include forSmallScreens(434) {
+    @include forSmallScreens(532) {
       background-size: cover;
     }
   }
@@ -95,7 +95,8 @@
     margin: 0 20px;
 
     @include forSmallScreens(1080) {
-      margin-top: 60px;
+      margin-top: 83px;
+      margin-left: 63px;
       margin-bottom: 100px;
     }
 
@@ -132,8 +133,7 @@
     flex: 1 0 100px;
     box-sizing: border-box;
     overflow: auto;
-    border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px 10px;
     left:-8px;
     border: 2px solid #207cca;
     background-color: #0288D1;

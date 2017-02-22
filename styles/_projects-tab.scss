@@ -79,18 +79,29 @@
 
 .project-component--nav ul li {
 
-  margin-top: 2em;
+  margin-top: 1em;
 
   @include forSmallScreens(870) {
     margin-top: 0;
   }
 }
 
+.project-component__tab-paragraph {
+  color: #FF4081;
+  display: block;
+
+  @include forSmallScreens(870) {
+    display: none;
+  }
+}
+
 .project-component--nav label {
   display: flex;
+  color: #fff;
   flex: 1;
   flex-wrap: wrap;
-  border: 2px solid black;
+  background: #03A9F4;
+  padding: 5px;
   font-size: 1em;
   text-transform: uppercase;
   font-variant: small-caps;
@@ -99,14 +110,16 @@
   flex-direction: column;
   height: 3.6em;
   cursor: pointer;
+  transition: background .4s ease, border .1s ease-in;
 
 
   &:hover {
-    border-right: 10px solid black;
+    border-right: 10px solid #FF4081;
+    background: #0288D1;
 
     @include forSmallScreens(870) {
-      border-right: 10px solid black;
-      border-left: 10px solid black;
+      border-right: 10px solid #FF4081;
+      border-left: 10px solid #FF4081;
     }
   }
 }
@@ -137,11 +150,11 @@
 
 
 @for $i from 1 through 6 {
-  .project-component input:nth-child(#{$i}):checked ~ .project-component--nav > ul > li:nth-child(#{$i}) > label {
-    border-right: 10px solid black;
+  .project-component input:nth-child(#{$i}):checked ~ .project-component--nav > ul > li:nth-child(#{$i + 1}) > label {
+    border-right: 10px solid #FF4081;
 
     @include forSmallScreens(870) {
-      border-left: 10px solid black;
+      border-left: 10px solid #FF4081;
     }
 
   }

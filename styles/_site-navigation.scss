@@ -17,7 +17,7 @@ $timing: .4s;
   height: 100%;
   width: 100%;
 
-  @include forSmallScreens(1024) {
+  @include forSmallScreens(1151) {
     height: auto;
   }
 
@@ -30,7 +30,7 @@ $timing: .4s;
     margin: 0;
     flex-wrap: wrap;
 
-    @include forSmallScreens(1024) {
+    @include forSmallScreens(1151) {
 
       width: 100%;
       display: block;
@@ -43,9 +43,9 @@ $timing: .4s;
   &__tab {
     flex: 1 0 200px;
 
-    @include forSmallScreens(1024) {
+    @include forSmallScreens(1151) {
 
-      flex: 1 0 600px;
+      flex: 1 0 800px;
 
 
     }
@@ -101,18 +101,19 @@ $timing: .4s;
     top: 120px;
     background: #fff;
     padding: 0;
+    max-height: 650px;
     height: 650px;
+    opacity: 0;
+    transition: opacity .2s ease-in;
 
 
 
-
-    @include forSmallScreens(1024) {
+    @include forSmallScreens(1151) {
       overflow: hidden;
       position: relative;
       max-height: 0em;
       border: none;
       width: 100%;
-      opacity: 0;
       top: 0;
       //transform: translate3d(0,0,0);
       transition: max-height $timing $ease;
@@ -128,26 +129,37 @@ $timing: .4s;
     border-bottom: 10px solid #FF4081;
     z-index:3;
 
-    @include forSmallScreens(1024) {
+    @include forSmallScreens(1151) {
       z-index: 0;
 
     }
 
   }
 
+  //&__radio:not(checked) ~ .primary-nav__content {
+  //  display: none;
+  //}
+
   &__radio:checked ~ .primary-nav__content {
     z-index: 2;
+    display: block;
+    opacity: 1;
 
 
 
 
 
 
-    @include forSmallScreens(1024) {
-      max-height: 98em;
-      min-height: 98em;
+    @include forSmallScreens(1151) {
+      max-height: 40em;
+      min-height: 40em;
       opacity: 1;
       padding: 0;
+    }
+
+    @include forSmallScreens(1025) {
+      max-height: 98em;
+      min-height: 98em;
     }
 
   }
@@ -159,15 +171,16 @@ $timing: .4s;
 .primary-nav__radio:checked ~ .contact-content,
 .primary-nav__radio:checked ~ .about-content {
 
-  @include forSmallScreens(1024) {
-    max-height: 42em;
-    min-height: 42em;
+  @include forSmallScreens(1151) {
+    height: 10em;
+    min-height: 45em;
+
   }
 }
 
 .primary-nav__radio:checked ~ .project-content {
 
-  @include forSmallScreens(1024) {
+  @include forSmallScreens(1151) {
     max-height: 60em;
     min-height: 60em;
   }
